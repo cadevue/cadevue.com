@@ -1,3 +1,7 @@
+---
+import Header from "../components/Header.astro"
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,17 +9,39 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Moonwr Portfolio - Game, Web, and XR Development</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
 
+<style is:global>
+	@font-face {
+		font-family: "Telegraf";
+		src: url("/fonts/PPTelegraf-Regular.otf");
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Telegraf";
+		src: url("/fonts/PPTelegraf-UltraBold.otf");
+		font-weight: bold;
+		font-style: normal;
+		font-display: swap;
+	}
+</style>
+
 <style>
 	html,
 	body {
+		font-family: "Telegraf", sans-serif;
+
 		margin: 0;
+		padding: 0;
 		width: 100%;
 		height: 100%;
 	}
