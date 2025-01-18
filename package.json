@@ -9,7 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/svelte": "^7.0.3",
     "@astrojs/tailwind": "^5.1.4",
     "astro": "^5.1.7",
     "svelte": "^5.19.0",

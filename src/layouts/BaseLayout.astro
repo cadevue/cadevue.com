@@ -11,13 +11,14 @@ import Header from "../components/Header.astro"
 		<meta name="generator" content={Astro.generator} />
 		<title>Moonwr Portfolio - Game, Web, and XR Development</title>
 	</head>
-	<body>
+	<body class="bg-main-light">
 		<Header />
 		<slot />
 	</body>
 </html>
 
 <style is:global>
+	/* Font Import */
 	@font-face {
 		font-family: "Telegraf";
 		src: url("/fonts/PPTelegraf-Regular.otf");
