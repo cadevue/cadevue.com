@@ -9,6 +9,12 @@ export default {
 				'main-light': '#F6F4F1',
 				'other-gray': '#D9D9D9',
 			},
+			rotate: {
+				'135': '135deg',
+			},
+			fontSize: {
+				'xxs': '0.5rem',
+			}
 		},
 	},
 	plugins: [],
