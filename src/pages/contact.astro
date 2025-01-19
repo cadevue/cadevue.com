@@ -6,7 +6,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContentLayout from '../layouts/ContentLayout.astro';
 ---
 <BaseLayout>
-    <section class="flex-1 bg-main-black text-main-light">
+    <section class="flex-1 bg-main-black text-main-light py-16">
         <ContentLayout>
             <div class="flex flex-col gap-2 max-w-2xl">
                 <h1>Let's Get in Touch!</h1>
@@ -15,7 +15,9 @@ import ContentLayout from '../layouts/ContentLayout.astro';
                     <TextField label="Name" id="name" type="text" placeholder="Walter White" required/>
                     <TextField label="Email" id="email" type="email" placeholder="walter@lospollos.org" required/>
                     <TextAreaField label="Message" id="message" rows="5" placeholder="Hi, Addin! Let's cook something together." required/>
-                    <Button title="send email" type="submit"/>
+                    <div class="mt-4">
+                        <Button title="send email" type="submit"/>
+                    </div>
                 </form>
             </div>
         </ContentLayout>
