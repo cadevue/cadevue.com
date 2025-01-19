@@ -1,19 +1,24 @@
 ---
+import ContentLayout from "../layouts/ContentLayout.astro";
 import AnchorButton from "./AnchorButton.astro";
 ---
 
-<section class="w-full flex flex-col bg-main-black px-8 pb-6 pt-8 relative gap-8">
-    <div class="absolute w-20 h-1 bg-main-red top-4 right-0"/>
-    <div class="flex flex-col gap-2">
-        <div class="flex items-center gap-2">
-            <h1 class="text-2xl text-main-light font-bold mt-1">Let's Collaborate</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" 
-                width="24px" fill="#ba3a2c" class="w-9 h-9"
-            >
-                <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/>
-            </svg>
+<section class="w-full bg-main-black pb-6 pt-8 relative">
+    <div class="absolute w-1/5 h-1 bg-main-red top-4 right-0"/>
+    <ContentLayout>
+        <div class="flex flex-col gap-8">
+            <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-2">
+                    <h1 class="text-2xl text-main-light font-bold mt-1">Let's Collaborate</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" 
+                        width="24px" fill="#ba3a2c" class="w-9 h-9"
+                    >
+                        <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/>
+                    </svg>
+                </div>
+                <p class="text-main-light">We could build something cool together!</p>
+            </div>
+            <AnchorButton title="contact me" href="/contact"/>
         </div>
-        <p class="text-main-light">We could build something cool together!</p>
-    </div>
-    <AnchorButton title="contact me" href="/contact"/>
+    </ContentLayout>
 </section>

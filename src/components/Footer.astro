@@ -1,19 +1,24 @@
 ---
+import ContentLayout from "../layouts/ContentLayout.astro";
 import Moonwr from "./Moonwr.astro";
 import Socials from "./Socials.astro";
 ---
 
-<footer class="bg-main-black w-full px-8 py-8 flex flex-col gap-4 text-main-light">
-    <div class="w-full h-0.5 bg-main-light"/>
-    <div class="flex justify-between">
-        <div class="flex flex-col justify-between">
-            <Moonwr />
-            <p class="text-sm">moonawardev@gmail.com</p>
+<footer class="bg-main-black w-full py-8 text-main-light">
+    <ContentLayout>
+        <div class="flex flex-col gap-4">
+            <div class="w-full h-0.5 bg-main-light"/>
+            <div class="flex justify-between">
+                <div class="flex flex-col justify-between">
+                    <Moonwr />
+                    <p class="text-sm">moonawardev@gmail.com</p>
+                </div>
+                <Socials />
+            </div>
+            <p class="text-sm">
+                Built with Astro.<br>
+                Copyright © 2025 Addin Munawwar. All rights reserved.
+            </p>
         </div>
-        <Socials />
-    </div>
-    <p class="text-sm">
-        Built with Astro.<br>
-        Copyright © 2025 Addin Munawwar. All rights reserved.
-    </p>
+    </ContentLayout>
 </footer>
