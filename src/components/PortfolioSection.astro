@@ -4,16 +4,14 @@ import PortfolioGrid from "./PortfolioGrid.astro";
 import ProjectCard from "./ProjectCard.astro";
 ---
 
-<section class="w-full flex flex-col bg-main-light px-8 py-6 relative">
+<section class="w-full flex flex-col bg-main-light px-8 py-6 relative text-main-black">
     <div class="absolute w-20 h-1 bg-main-red top-4 right-0"/>
     <div class="flex items-center gap-2">
-        <h1 class="text-2xl text-main-black font-bold mt-1">Portfolio</h1>
+        <h1 class="text-2xl font-bold mt-1">Portfolio</h1>
         <ArrowIcon color="#ba3a2c" classOverride="w-9 h-9 rotate-45"/>
     </div>
     <p class="text-main-black">These are some of my proudest project!</p>
     <PortfolioGrid>
-        <ProjectCard />
-        <ProjectCard />
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
