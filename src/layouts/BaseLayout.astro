@@ -7,7 +7,7 @@ import Header from "../components/Header.astro"
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Moonwr Portfolio - Game, Web, and XR Development</title>
@@ -42,7 +42,11 @@ import Header from "../components/Header.astro"
 	@tailwind utilities;
 
 	h1 {
-		@apply text-2xl font-bold;
+		@apply text-2xl font-bold lg:text-3xl xl:text-4xl;
+	}
+
+	p {
+		@apply text-base lg:text-lg xl:text-xl;
 	}
 </style>
 
