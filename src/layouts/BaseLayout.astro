@@ -36,6 +36,14 @@ import Header from "../components/Header.astro"
 		font-style: normal;
 		font-display: swap;
 	}
+
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+	h1 {
+		@apply text-2xl font-bold;
+	}
 </style>
 
 <style>
@@ -48,4 +56,5 @@ import Header from "../components/Header.astro"
 		width: 100%;
 		height: 100%;
 	}
+
 </style>

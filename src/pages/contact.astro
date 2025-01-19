@@ -1,9 +1,46 @@
 ---
+import Button from '../components/Button.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-
 <BaseLayout>
-    <div class="flex-1 bg-main-black text-main-light px-8">
-        <h1>Contact</h1>
+    <div class="flex-1 bg-main-black text-main-light px-8 flex flex-col gap-2">
+        <h1>Let's Get in Touch!</h1>
+        <p>You could write me a message from the form below.</p>
+        <form class="flex flex-col gap-3">
+            <div class="flex flex-col gap-1">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required 
+                    class="w-full p-2 rounded-lg text-main-black outline outline-1 -outline-offset-1 outline-other-gray
+                    focus:outline focus:outline-3 focus:outline-main-red" placeholder="Walter White"
+                />
+            </div>
+            <div class="flex flex-col gap-1">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required 
+                    class="w-full p-2 rounded-lg text-main-black outline outline-1 outline-other-gray
+                    focus:outline focus:outline-3 focus:outline-main-red" placeholder="walter@lospollos.com"
+                />
+            </div>
+            <div class="flex flex-col gap-1 mb-3">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required 
+                    class="w-full p-2 rounded-lg text-main-black outline outline-1 -outline-offset-1 outline-other-gray placeholder:outline-other-gray
+                    focus:outline focus:outline-3 focus:outline-main-red" rows="5" placeholder="Hi, Addin! Let's cook something together."
+                ></textarea>
+            </div>
+            <Button title="send email" type="submit"/>
+        </form>
     </div>
 </BaseLayout>
+
+<script>
+    const form = document.querySelector('form') as HTMLFormElement;
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const message = formData.get('message');
+        console.log({name, email, message});
+    });
+</script>
