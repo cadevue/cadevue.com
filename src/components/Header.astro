@@ -1,7 +1,10 @@
 ---
+import ContentLayout from "../layouts/ContentLayout.astro";
 import Moonwr from "./Moonwr.astro";
 ---
 
-<header class="w-full bg-main-black px-8 py-6">
-    <Moonwr />
+<header class="w-full bg-main-black py-6">
+    <ContentLayout>
+        <Moonwr />
+    </ContentLayout>
 </header>
