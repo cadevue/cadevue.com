@@ -4,14 +4,18 @@ import TextField from '../components/TextField.astro';
 import TextAreaField from '../components/TextAreaField.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContentLayout from '../layouts/ContentLayout.astro';
+import { Image } from 'astro:assets';
+
+import featherImage from '../assets/feather.png';
 ---
 <BaseLayout>
-    <section class="flex-1 bg-main-black text-main-light py-16">
+    <section class="flex-1 bg-main-black text-main-light py-16 relative">
+        <Image src={featherImage} alt="Feather" class="absolute right-0 contain z-0"/>
         <ContentLayout>
-            <div class="flex flex-col gap-2 max-w-2xl">
-                <h1>Let's Get in Touch!</h1>
-                <p>You could write me a message from the form below.</p>
-                <form class="flex flex-col gap-3">
+            <div class="flex flex-col gap-2 max-w-2xl z-10">
+                <h1 class="z-10">Let's Get in Touch!</h1>
+                <p class="z-10">You could write me a message from the form below.</p>
+                <form class="flex flex-col gap-3 z-10">
                     <TextField label="Name" id="name" type="text" placeholder="Walter White" required/>
                     <TextField label="Email" id="email" type="email" placeholder="walter@lospollos.org" required/>
                     <TextAreaField label="Message" id="message" rows="5" placeholder="Hi, Addin! Let's cook something together." required/>

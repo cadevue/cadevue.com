@@ -6,6 +6,6 @@ const { label, id, type, placeholder, required } = Astro.props
     <label for={id}>{label}</label>
     <input type={type} id={id} name={id} required={required}
         class="w-full p-2 rounded-lg text-main-black outline outline-1 -outline-offset-1 outline-other-gray
-        focus:outline focus:outline-3 focus:outline-main-red" placeholder={placeholder}
+        focus:outline focus:outline-3 focus:outline-main-red max-w-sm" placeholder={placeholder}
     />
 </div>
