@@ -4,7 +4,7 @@ import ArrowIcon from "./ArrowIcon.astro"
 const {title, href='/'} = Astro.props
 ---
 
-<button class="bg-main-red px-6 py-0.5 rounded-full flex gap-3 items-center w-fit">
+<a class="bg-main-red px-6 py-0.5 rounded-full flex gap-3 items-center w-fit" href={href}>
     <p class="text-lg text-main-light font-bold">{title}</p>
     <ArrowIcon color="#f4f6f1" classOverride="w-6 h-6 -rotate-45"/>
-</button>
+</a>
