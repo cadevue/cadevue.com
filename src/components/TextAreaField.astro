@@ -6,6 +6,6 @@ const { label, id, rows, placeholder, required } = Astro.props
     <label for={id}>{label}</label>
     <textarea id={id} name={id} required={required} 
         class="w-full max-w-lg p-2 rounded-lg text-main-black outline outline-1 -outline-offset-1 outline-main-gray placeholder:outline-main-gray
-        focus:outline focus:outline-3 focus:outline-main-red" rows={rows} placeholder={placeholder}
+        focus:outline focus:outline-3 focus:outline-main-red resize-none" rows={rows} placeholder={placeholder}
     ></textarea>
 </div>

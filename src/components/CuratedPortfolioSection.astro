@@ -4,9 +4,7 @@ import ArrowIcon from "./ArrowIcon.astro";
 import PortfolioGrid from "./PortfolioGrid.astro";
 
 // Will be replaced with actual data later
-const curatedProjects = [
-    {}, {}, {}, {}, {}, {}, {}, {}
-]
+const curatedProjects = [{}, {}, {}, {}, {}, {}, {}, {}]
 ---
 
 <section class="w-full bg-main-light py-20 sm:py-32 relative text-main-black">
@@ -19,7 +17,10 @@ const curatedProjects = [
                 <ArrowIcon color="#ba3a2c" size="40px"/>
             </span>
         </div>
-        <p class="text-main-black">These are some of my proudest project!</p>
+        <p class="text-main-black mb-8">These are some of my proudest, curated projects!</p>
         <PortfolioGrid projects={curatedProjects}/>
+        <p class="mt-16">
+            <a href="/portfolio" class="text-main-black hover:text-main-red underline w-full text-center">View all projects</a>
+        </p>
     </ContentLayout>
 </section>
