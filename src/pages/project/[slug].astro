@@ -1,0 +1,27 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+
+export const getStaticPaths = async () => {
+    const projects : CollectionEntry<"projects">[] = await getCollection('projects');
+    const paths = projects.map((project) => ({
+        params: { slug: project.slug },
+        props: { project }
+    }));
+    return paths;
+};
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+---
+
+<BaseLayout title=`${project.data.title} - Moonwr Portfolio`>
+    <ContentLayout>
+        <main class="text-main-light w-full h-full">
+            <h1 class="mb-4">{project.data.title}</h1>
+            <Content />
+        </main>
+        <!-- <h1>{project.data.title}</h1> -->
+    </ContentLayout>
+</BaseLayout>

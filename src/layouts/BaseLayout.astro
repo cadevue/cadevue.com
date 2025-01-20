@@ -1,6 +1,8 @@
 ---
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
+
+const { title = "Game, Web, and XR Development - Moonwr Portfolio" } = Astro.props
 ---
 
 <!doctype html>
@@ -10,7 +12,7 @@ import Header from "../components/Header.astro"
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Moonwr Portfolio - Game, Web, and XR Development</title>
+		<title>{title}</title>
 	</head>
 	<body class="bg-main-black min-h-1.25s flex flex-col">
 		<Header />
@@ -43,6 +45,10 @@ import Header from "../components/Header.astro"
 
 	h1 {
 		@apply text-2xl font-bold sm:text-4xl;
+	}
+
+	h2 {
+		@apply text-xl font-bold sm:text-2xl;
 	}
 
 	p {
