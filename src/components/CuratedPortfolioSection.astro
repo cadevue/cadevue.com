@@ -2,6 +2,11 @@
 import ContentLayout from "../layouts/ContentLayout.astro";
 import ArrowIcon from "./ArrowIcon.astro";
 import PortfolioGrid from "./PortfolioGrid.astro";
+
+// Will be replaced with actual data later
+const curatedProjects = [
+    {}, {}, {}, {}, {}, {}, {}, {}
+]
 ---
 
 <section class="w-full bg-main-light py-20 sm:py-32 relative text-main-black">
@@ -15,6 +20,6 @@ import PortfolioGrid from "./PortfolioGrid.astro";
             </span>
         </div>
         <p class="text-main-black">These are some of my proudest project!</p>
-        <PortfolioGrid />
+        <PortfolioGrid projects={curatedProjects}/>
     </ContentLayout>
 </section>

@@ -1,16 +1,11 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
+
+const { projects } = Astro.props;
 ---
 
 <div class="grid grid-cols-1 gap-6 my-6 sm:grid-cols-2">
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
+    { projects.map((project : any) => (
+        <ProjectCard />
+    )) }
 </div>
