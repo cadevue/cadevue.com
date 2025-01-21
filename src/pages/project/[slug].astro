@@ -40,9 +40,9 @@ const poster = getPoster();
                     <h1>{project.data.title}</h1>
                     <Image src={poster} alt={alt} class="w-full h-auto aspect-video rounded-xl" />
                     <div class="flex gap-2">
-                        <Tag name="Game Dev" />
-                        <Tag name="Unity" />
-                        <Tag name="C#" />
+                        {
+                            project.data.tags.map((tag) => <Tag name={tag} />)
+                        }
                     </div>
                 </div>
                 <Content />

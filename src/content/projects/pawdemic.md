@@ -4,6 +4,7 @@ poster: {
     src: /src/assets/posters/poster-pawdemic.png,
     alt: Pawdemic Poster
 }
+tags: ["Game Dev", "Unity", "C#"]
 
 ---
 
