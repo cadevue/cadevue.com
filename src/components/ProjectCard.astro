@@ -15,8 +15,7 @@ const { title, tags, img, alt, slug, aos } = Astro.props;
         bg-gradient-to-t from-main-black to-transparent rounded-lg pointer-events-none
     ">
         <h2 transition:name=`title-${slug}`>{title}</h2>
-        <div class="flex gap-2 pointer-events-auto" transition:name=`tags-${slug}`>
-            
+        <div class="flex gap-2 pointer-events-auto flex-wrap" transition:name=`tags-${slug}`>
             {
                 tags.map((tag : string) => {
                     return <a href="/portfolio" class="text-white bg-main-red rounded-full px-2 py-0.5 text-xs 
