@@ -1,0 +1,15 @@
+---
+const { text } = Astro.props
+---
+
+<button class="flex items-center gap-4 group" id="back-button" onclick="history.back()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+        class=`
+            ${ text ? 'w-6 h-6 sm:w-6 sm:h-6' : 'w-8 h-8 sm:w-8 sm:h-8'}
+            fill-main-light group-hover:fill-main-red
+        `
+    >
+        <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/>
+    </svg>
+    <p class="underline group-hover:text-main-red">{text}</p>
+</button>

@@ -2,14 +2,20 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContentLayout from "../layouts/ContentLayout.astro";
+import BackButton from "../components/BackButton.astro";
 ---
 
 <BaseLayout title="Portfolio - Moonwr Portfolio">
-    <ContentLayout>
-        <div class="flex-1 text-main-light flex flex-col gap-2 mt-16 w-full">
-            <h1>Under Construction</h1>
-            <p class="text-main-gray">I'm currently still compiling all the projects I've worked on. Please check back later. If you want more details, please contact me!</p>
-            <a href="/" class="text-main-light hover:text-main-red underline mt-5 w-fit">Go back to home</a>
-        </div>
-    </ContentLayout>
+    <main class="flex-1">
+        <ContentLayout>
+            <div class="flex-1 text-main-light flex flex-col gap-2 mt-12 w-full">
+                <span class="mb-12">
+                    <BackButton />
+                </span>
+                <h1>Under Construction</h1>
+                <p class="text-main-gray">I'm currently still compiling all the projects I've worked on. Please check back later. If you want more details, please contact me!</p>
+                <a href="/" class="text-main-light hover:text-main-red underline mt-5 w-fit">Go back to home</a>
+            </div>
+        </ContentLayout>
+    </main>
 </BaseLayout>

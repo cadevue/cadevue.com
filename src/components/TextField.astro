@@ -1,8 +1,8 @@
 ---
-const { label, id, type, placeholder, required } = Astro.props
+const { label, id, type, placeholder, required, aos } = Astro.props
 ---
 
-<div class="flex flex-col gap-1">
+<div class="flex flex-col gap-1" data-aos={aos?.type} data-aos-delay={aos?.delay} data-aos-anchor={aos?.anchor}>
     <label for={id}>{label}</label>
     <input type={type} id={id} name={id} required={required}
         class="w-full p-2 rounded-lg text-main-black outline outline-1 -outline-offset-1 outline-main-gray

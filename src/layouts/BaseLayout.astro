@@ -1,4 +1,5 @@
 ---
+import { ClientRouter } from "astro:transitions"
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
 
@@ -6,7 +7,7 @@ const { title = "Game, Web, and XR Developer - Moonwr Portfolio" } = Astro.props
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-main-black">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,16 +16,26 @@ const { title = "Game, Web, and XR Developer - Moonwr Portfolio" } = Astro.props
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ClientRouter fallback="swap" />
 	</head>
-	<body class="bg-main-black min-h-1.25s flex flex-col">
+	<body class="min-h-1.25s flex flex-col">
 		<Header />
 		<slot />
 		<Footer />
 		<script>
 			import AOS from 'aos';
-			AOS.init({
-				duration: 750,
-				once: true,
+
+			function initAOS() {
+				AOS.init({
+					duration: 750,
+					once: true,
+				});
+			}
+
+			initAOS();
+			
+			document.addEventListener('astro:after-swap', () => {
+				initAOS();
 			});
 		</script>
 	</body>

@@ -20,6 +20,7 @@ const { Content } = await project.render();
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import Tag from '../../components/Tag.astro';
+import BackButton from '../../components/BackButton.astro';
 
 const { src, alt } = project.data.poster;
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*.{png,jpg,jpeg}');
@@ -35,19 +36,22 @@ const poster = getPoster();
 <BaseLayout title=`${project.data.title} - Moonwr Portfolio`>
     <ContentLayout>
         <div class="w-full flex justify-center">
-            <main class="text-main-light max-w-4xl">
-                <div class="flex flex-col gap-4 mb-8">
+            <main class="text-main-light max-w-4xl flex flex-col gap-8">
+                <div class="flex flex-col gap-6">
+                    <BackButton />
                     <h1>{project.data.title}</h1>
-                    <Image src={poster} alt={alt} class="w-full h-auto aspect-video rounded-xl" />
+                    <Image src={poster} alt={alt} class="w-full h-auto aspect-video rounded-xl" transition:name=`poster-${project.slug}`/>
                     <div class="flex gap-2">
                         {
                             project.data.tags.map((tag) => <Tag name={tag} />)
                         }
                     </div>
                 </div>
-                <Content />
+                <div class="flex flex-col gap-4">
+                    <Content />
+                </div>
+                <BackButton text="Back" />
             </main>
-
         </div>
     </ContentLayout>
 </BaseLayout>

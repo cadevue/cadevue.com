@@ -7,25 +7,35 @@ import ContentLayout from '../layouts/ContentLayout.astro';
 import { Image } from 'astro:assets';
 
 import featherImage from '../assets/feather.png';
+import BackButton from '../components/BackButton.astro';
 ---
 <BaseLayout title="Contact - Moonwr Portfolio">
-    <section class="flex-1 bg-main-black text-main-light py-16 relative">
+    <main class="flex-1 bg-main-black text-main-light py-16 relative">
         <Image src={featherImage} alt="Feather" class="absolute right-0 top-0 contain z-0 h-full w-fit"/>
         <ContentLayout>
-            <div class="flex flex-col gap-2 max-w-2xl z-10">
-                <h1 class="z-10">Let's Get in Touch!</h1>
-                <p class="z-10">You could write me a message from the form below.</p>
+            <main class="flex flex-col gap-2 max-w-2xl z-10">
+                <h1 data-aos="fade-up" id="contact-start">Let's Get in Touch!</h1>
+                <p data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#contact-start">You could write me a message from the form below.</p>
                 <form class="flex flex-col gap-3 z-10">
-                    <TextField label="Name" id="name" type="text" placeholder="Walter White" required/>
-                    <TextField label="Email" id="email" type="email" placeholder="walter@lospollos.org" required/>
-                    <TextAreaField label="Message" id="message" rows="5" placeholder="Hi, Addin! Let's cook something together." required/>
-                    <div class="mt-4">
+                    <TextField label="Name" id="name" type="text" placeholder="Walter White" required
+                        aos={{ type: "fade-up", delay: "500", anchor: "#contact-start" }}
+                    />
+                    <TextField label="Email" id="email" type="email" placeholder="walter@lospollos.org" required
+                        aos={{ type: "fade-up", delay: "600", anchor: "#contact-start" }}
+                    />
+                    <TextAreaField label="Message" id="message" rows="5" placeholder="Hi, Addin! Let's cook something together." required
+                        aos={{ type: "fade-up", delay: "700", anchor: "#contact-start" }}
+                    />
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="#contact-start">
                         <Button title="send email" type="submit"/>
                     </div>
                 </form>
             </div>
+            <div class="mt-8 flex gap-4 items-center" data-aos="fade-up" data-aos-delay="1100" data-aos-anchor="#contact-start">
+                <BackButton text="Back" />
+            </div>
         </ContentLayout>
-    </section>
+    </main>
 </BaseLayout>
 
 <script>

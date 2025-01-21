@@ -4,11 +4,13 @@ import ContentLayout from '../layouts/ContentLayout.astro'
 ---
 
 <BaseLayout title="404 Page not Found - Moonwr Portfolio">
-    <ContentLayout>
-        <div class="flex-1 text-main-light flex flex-col gap-2 justify-center items-center h-full">
-            <h1 class="text-main-red text-4xl sm:text-6xl">404</h1>
-            <p>Page not found!</p>
-            <a href="/" class="text-main-light hover:text-main-red underline mt-5">Go back to home</a>
-        </div>
-    </ContentLayout>
+    <main class="flex-1 h-full">
+        <ContentLayout>
+            <div class="text-main-light flex flex-col gap-2 justify-center items-center h-full">
+                <h1 class="text-main-red text-4xl sm:text-6xl">404</h1>
+                <p>Page not found!</p>
+                <a href="/" class="text-main-light hover:text-main-red underline mt-5">Go back to home</a>
+            </div>
+        </ContentLayout>
+    </main>
 </BaseLayout>
