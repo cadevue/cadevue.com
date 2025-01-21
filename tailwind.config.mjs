@@ -3,6 +3,9 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			fontSize: {
+				'xxs': '.5rem',
+			},
 			colors: {
 				'main-red'	: '#BA3A2C',
 				'main-black': '#202020',

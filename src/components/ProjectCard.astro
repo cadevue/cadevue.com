@@ -1,11 +1,30 @@
 ---
 import { Image } from "astro:assets";
+import Tag from "./Tag.astro";
 
-const { title, img, alt, slug, aos } = Astro.props;
+const { title, tags, img, alt, slug, aos } = Astro.props;
 ---
 
-<a class="w-full aspect-video rounded-lg bg-main-gray" href=`/project/${slug}`
+<div class="relative w-full aspect-video rounded-lg"
     data-aos={aos?.type} data-aos-anchor={aos?.anchor} data-aos-delay={aos?.delay}
 >
-    <Image src={img} alt={alt} class="w-full h-auto aspect-video rounded-lg" transition:name=`poster-${slug}`/>
-</a>
+    <a class="absolute bottom-0 w-full bg-main-gray flex items-end" href=`/project/${slug}`>
+        <Image src={img} alt={alt} class="w-full aspect-video rounded-lg" transition:name=`poster-${slug}`/>
+    </a>
+    <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light px-6 py-6 flex flex-col justify-end 
+        bg-gradient-to-t from-main-black to-transparent rounded-lg pointer-events-none
+    ">
+        <h2 transition:name=`title-${slug}`>{title}</h2>
+        <div class="flex gap-2 pointer-events-auto" transition:name=`tags-${slug}`>
+            
+            {
+                tags.map((tag : string) => {
+                    return <a href="/portfolio" class="text-white bg-main-red rounded-full px-2 py-0.5 text-xs 
+                        lg:text-sm">
+                        { tag }
+                    </a>
+                })
+            }
+        </div>
+    </div>
+</div>
