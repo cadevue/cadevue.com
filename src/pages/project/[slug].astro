@@ -41,7 +41,7 @@ const poster = getPoster();
                     <BackButton />
                     <h1 transition:name=`title-${project.slug}`>{project.data.title}</h1>
                     <Image src={poster} alt={alt} class="w-full h-auto aspect-video rounded-xl" transition:name=`poster-${project.slug}`/>
-                    <div class="flex gap-2" transition:name=`tags-${project.slug}`>
+                    <div class="flex gap-2 flex-wrap" transition:name=`tags-${project.slug}`>
                         {
                             project.data.tags.map((tag) => <Tag name={tag} />)
                         }

@@ -1,11 +1,15 @@
 ---
 title: Robushka
 poster: {
-    src: /src/assets/posters/poster-pawdemic.png,
-    alt: Pawdemic Poster
+    src: /src/assets/posters/poster-robushka.png,
+    alt: Robushka Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
 ---
 
-## About Project
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Description
+A puzzle game inspired by Matryoshka dolls. Help each Robushka to get inside their largest parent in this relaxing puzzle game.  Hop in and out of different sized Robushkas to finish each level. 
+
+This game was made for the GMTK Game Jam 2024 with the theme 'Built to Scale'.
+
+[To Itch.io Page](https://noart278.itch.io/robushka)

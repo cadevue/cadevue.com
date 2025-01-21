@@ -8,7 +8,7 @@ const { title, tags, img, alt, slug, aos } = Astro.props;
 <div class="relative w-full aspect-video rounded-lg"
     data-aos={aos?.type} data-aos-anchor={aos?.anchor} data-aos-delay={aos?.delay}
 >
-    <a class="absolute bottom-0 w-full bg-main-gray flex items-end" href=`/project/${slug}`>
+    <a class="absolute bottom-0 w-full bg-main-gray flex items-end no-underline" href=`/project/${slug}`>
         <Image src={img} alt={alt} class="w-full aspect-video rounded-lg" transition:name=`poster-${slug}`/>
     </a>
     <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light px-6 py-6 flex flex-col justify-end 
@@ -18,8 +18,8 @@ const { title, tags, img, alt, slug, aos } = Astro.props;
         <div class="flex gap-2 pointer-events-auto flex-wrap" transition:name=`tags-${slug}`>
             {
                 tags.map((tag : string) => {
-                    return <a href="/portfolio" class="text-white bg-main-red rounded-full px-2 py-0.5 text-xs 
-                        lg:text-sm">
+                    return <a href="/portfolio" class="text-main-light bg-main-red rounded-full px-2 py-0.5 text-xs 
+                        lg:text-sm no-underline hover:text-main-light">
                         { tag }
                     </a>
                 })

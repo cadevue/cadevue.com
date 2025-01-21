@@ -1,9 +1,11 @@
 ---
 const { name } = Astro.props;
+
+const query = name.toLowerCase().replace(/\s/g, '-');
 ---
 
 
-<a href="/portfolio" class="text-white font-bold bg-main-red rounded-full px-4 py-0.5 text-sm 
-    sm:text-base">
+<a href=`/portfolio?tag=${query}` class="text-main-light font-bold bg-main-red rounded-full px-4 py-0.5 text-sm 
+    sm:text-base no-underline hover:text-main-light">
     { name }
 </a>

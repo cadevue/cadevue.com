@@ -1,11 +1,15 @@
 ---
 title: One Last Dance
 poster: {
-    src: /src/assets/posters/poster-pawdemic.png,
-    alt: Pawdemic Poster
+    src: /src/assets/posters/poster-one-last-dance.png,
+    alt: One Last Dance Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
 ---
 
-## About Project
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Description
+Two astronauts stranded in space inside the asteroid belt, facing their final fate. They perform their last dance together, a dance of life and death, a dance of love and despair. 
+
+This game was made for Solo Dev Game Jam #4 with the theme 'Two Button Controls'.
+
+[To Itch.io Page](https://moonawar.itch.io/one-last-dance)

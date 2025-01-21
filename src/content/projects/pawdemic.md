@@ -8,5 +8,9 @@ tags: ["Game Dev", "Unity", "C#"]
 
 ---
 
-## About Project
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Description
+Collect cats and spread feline domination in this chaotic action-stealth game! Become a cat god, build your cat army, and sow seeds of feline supremacy (and love)! Be careful of your jealous rival though, the dog, who are all too eager to catch you. 
+
+This game was the <b>2nd place winner</b> of <b>Student Category</b> in the <b>Gameseed 2024</b>, the biggest National Game Development Competition in Indonesia based on number of participants.
+
+[To Itch.io Page](https://noart278.itch.io/pawdemic)
