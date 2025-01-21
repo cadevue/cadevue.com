@@ -1,5 +1,9 @@
 ---
 title: Robushka
+poster: {
+    src: /src/assets/posters/poster-pawdemic.png,
+    alt: Pawdemic Poster
+}
 ---
 
 ## About Project

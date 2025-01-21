@@ -1,10 +1,15 @@
 ---
+import { getCollection } from "astro:content";
 import ContentLayout from "../layouts/ContentLayout.astro";
 import ArrowIcon from "./ArrowIcon.astro";
 import PortfolioGrid from "./PortfolioGrid.astro";
 
-// Will be replaced with actual data later
-const curatedProjects = [{}, {}, {}, {}, {}, {}, {}, {}]
+const curatedProjectIds = ["pawdemic", "robushka", "one-last-dance"];
+const allProjects = await getCollection("projects");
+
+const curatedProjects = curatedProjectIds.map((id) => {
+    return allProjects.find((project) => project.slug === id);
+});
 ---
 
 <section class="w-full bg-main-light py-20 sm:py-32 relative text-main-black">

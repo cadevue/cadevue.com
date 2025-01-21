@@ -1,2 +1,9 @@
-<div class="w-full aspect-video rounded-lg bg-main-gray">
-</div>
+---
+import { Image } from "astro:assets";
+
+const { title, img, alt, slug } = Astro.props;
+---
+
+<a class="w-full aspect-video rounded-lg bg-main-gray" href=`/project/${slug}`>
+    <Image src={img} alt={alt} class="w-full h-auto aspect-video rounded-lg" />
+</a>

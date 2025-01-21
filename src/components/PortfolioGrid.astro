@@ -2,10 +2,18 @@
 import ProjectCard from "./ProjectCard.astro";
 
 const { projects } = Astro.props;
+
+const imageGetters = import.meta.glob<{ default: ImageMetadata }>('/src/assets/posters/**/*.{png,jpg,jpeg}');
 ---
 
 <div class="grid grid-cols-1 gap-6 my-6 sm:grid-cols-2">
-    { projects.map((project : any) => (
-        <ProjectCard />
-    )) }
+    { projects.map((project : any) => {
+        return <ProjectCard  
+            title={project.data.title} 
+            img={imageGetters[project.data.poster.src]()}
+            alt={project.data.poster.alt} 
+            slug={project.slug} 
+        />
+    }
+    ) }
 </div>

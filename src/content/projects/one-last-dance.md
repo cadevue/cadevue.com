@@ -1,5 +1,9 @@
 ---
 title: One Last Dance
+poster: {
+    src: /src/assets/posters/poster-pawdemic.png,
+    alt: Pawdemic Poster
+}
 ---
 
 ## About Project
