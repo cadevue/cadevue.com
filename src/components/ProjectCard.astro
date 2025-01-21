@@ -18,7 +18,8 @@ const { title, tags, img, alt, slug, aos } = Astro.props;
         <div class="flex gap-2 pointer-events-auto flex-wrap" transition:name=`tags-${slug}`>
             {
                 tags.map((tag : string) => {
-                    return <a href="/portfolio" class="text-main-light bg-main-red rounded-full px-2 py-0.5 text-xs 
+                    const path =`/portfolio?tag=${tag.toLocaleLowerCase().replace(/\s/g, '-')}`;
+                    return <a href={path} class="text-main-light bg-main-red rounded-full px-2 py-0.5 text-xs 
                         lg:text-sm no-underline hover:text-main-light">
                         { tag }
                     </a>

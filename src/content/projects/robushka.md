@@ -12,4 +12,7 @@ A puzzle game inspired by Matryoshka dolls. Help each Robushka to get inside the
 
 This game was made for the GMTK Game Jam 2024 with the theme 'Built to Scale'.
 
-[To Itch.io Page](https://noart278.itch.io/robushka)
+<a href="https://noart278.itch.io/robushka" target="_blank" rel="noopener noreferrer">To Itch.io Page (Play in Browser)</a><br><br>
+
+## Important Note
+This website is currently still undergoing development. All of the projects and more details about each project will be added gradually. If you have any question, feel free to contact me 😊
