@@ -9,13 +9,13 @@ const { title, tags, img, alt, slug, aos } = Astro.props;
     data-aos={aos?.type} data-aos-anchor={aos?.anchor} data-aos-delay={aos?.delay}
 >
     <a class="absolute bottom-0 w-full bg-main-gray flex items-end no-underline" href=`/project/${slug}`>
-        <Image src={img} alt={alt} class="w-full aspect-video rounded-lg" transition:name=`poster-${slug}`/>
+        <Image src={img} alt={alt} class="w-full aspect-video rounded-lg"/>
     </a>
     <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light px-6 py-6 flex flex-col justify-end 
         bg-gradient-to-t from-main-black to-transparent rounded-lg pointer-events-none
     ">
-        <h2 transition:name=`title-${slug}`>{title}</h2>
-        <div class="flex gap-2 pointer-events-auto flex-wrap" transition:name=`tags-${slug}`>
+        <h2>{title}</h2>
+        <div class="flex gap-2 pointer-events-auto flex-wrap">
             {
                 tags.map((tag : string) => {
                     const path =`/portfolio?tag=${tag.toLocaleLowerCase().replace(/\s/g, '-')}`;
