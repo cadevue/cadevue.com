@@ -1,9 +1,11 @@
 ---
 import { Image } from "astro:assets";
 
-const { title, img, alt, slug } = Astro.props;
+const { title, img, alt, slug, aos } = Astro.props;
 ---
 
-<a class="w-full aspect-video rounded-lg bg-main-gray" href=`/project/${slug}`>
+<a class="w-full aspect-video rounded-lg bg-main-gray" href=`/project/${slug}`
+    data-aos={aos?.type} data-aos-anchor={aos?.anchor} data-aos-delay={aos?.delay}
+>
     <Image src={img} alt={alt} class="w-full h-auto aspect-video rounded-lg" />
 </a>

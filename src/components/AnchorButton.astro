@@ -1,16 +1,11 @@
 ---
+import type { AOSParams } from "../types"
 import ArrowIcon from "./ArrowIcon.astro"
 
 interface Props {
     title: string
     href?: string
-    aos?: {
-        type?: string
-        duration?: string
-        delay?: string
-        once?: string
-        offset?: string
-    }
+    aos?: AOSParams
 }
 
 const { title, href='/', aos } = Astro.props

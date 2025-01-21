@@ -10,21 +10,25 @@ const allProjects = await getCollection("projects");
 const curatedProjects = curatedProjectIds.map((id) => {
     return allProjects.find((project) => project.slug === id);
 });
+
+// Interactivity Settings
+const portofolioGridDelay = 600
+const allProjectsLinkDelay = portofolioGridDelay + 200 * curatedProjects.length
 ---
 
 <section class="w-full bg-main-light py-20 sm:py-32 relative text-main-black">
     <ContentLayout>
         <div class="absolute w-1/5 h-1 bg-main-red top-10 right-0"/>
         <div class="absolute w-1/5 h-1 bg-main-red bottom-10 left-0"/>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2" data-aos="fade-up" data-aos-delay="200" id='portfolio-start'>
             <h1 class="mt-1">Portfolio</h1>
             <span class="rotate-45">
                 <ArrowIcon color="#ba3a2c" size="40px"/>
             </span>
         </div>
-        <p class="text-main-black mb-8">These are some of my proudest, curated projects!</p>
-        <PortfolioGrid projects={curatedProjects}/>
-        <p class="mt-16">
+        <p class="text-main-black mb-8" data-aos="fade-up" data-aos-delay="400">These are some of my proudest, curated projects!</p>
+        <PortfolioGrid projects={curatedProjects} initialDelay={portofolioGridDelay} anchorElmt="#portfolio-start"/>
+        <p class="mt-16" data-aos="fade-up" data-aos-delay={allProjectsLinkDelay} data-aos-anchor="#portfolio-start">
             <a href="/portfolio" class="text-main-black hover:text-main-red underline w-full text-center">View all projects</a>
         </p>
     </ContentLayout>
