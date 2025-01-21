@@ -1,10 +1,25 @@
 ---
 import ArrowIcon from "./ArrowIcon.astro"
 
-const {title, href='/'} = Astro.props
+interface Props {
+    title: string
+    href?: string
+    aos?: {
+        type?: string
+        duration?: string
+        delay?: string
+        once?: string
+        offset?: string
+    }
+}
+
+const { title, href='/', aos } = Astro.props
 ---
 
-<a class="bg-main-red px-6 py-1 rounded-full flex gap-3 items-center w-fit" href={href}>
+<a class="bg-main-red px-6 py-1 rounded-full flex gap-3 items-center w-fit" href={href}
+    data-aos = {aos?.type} data-aos-duration = {aos?.duration} data-aos-delay = {aos?.delay} data-aos-once = {aos?.once}
+    data-aos-offset = {aos?.offset}
+>
     <p class="text-lg text-main-light font-bold sm:text-2xl">{title}</p>
     <span class="-rotate-45">
         <ArrowIcon color="#f4f6f1" size="24px"/>

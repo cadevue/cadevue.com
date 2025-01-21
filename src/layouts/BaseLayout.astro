@@ -11,6 +11,8 @@ const { title = "Game, Web, and XR Development - Moonwr Portfolio" } = Astro.pro
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -18,8 +20,16 @@ const { title = "Game, Web, and XR Development - Moonwr Portfolio" } = Astro.pro
 		<Header />
 		<slot />
 		<Footer />
+		<script>
+			import AOS from 'aos';
+			AOS.init({
+				duration: 750,
+				once: true,
+			});
+		</script>
 	</body>
 </html>
+
 
 <style is:global>
 	/* Font Import */
