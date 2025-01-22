@@ -8,6 +8,7 @@ const projectCollection = defineCollection({
             alt: z.string(),
         }),
         tags: z.array(z.string()),
+        priority: z.number(),
     })
 });
 

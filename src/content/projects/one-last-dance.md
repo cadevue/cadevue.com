@@ -5,6 +5,7 @@ poster: {
     alt: One Last Dance Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
+priority: 9
 ---
 ## Description
 Two astronauts stranded in space inside the asteroid belt, facing their final fate. They perform their last dance together, a dance of life and death, a dance of hope and despair.

@@ -5,8 +5,9 @@ poster: {
     alt: Pawdemic Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
-
+priority: 10
 ---
+
 ## Description
 Collect cats and spread feline domination in this chaotic action-stealth game! Become a cat god, build your cat army, and sow seeds of feline supremacy (and love)! Be careful of your jealous rival though, the dog, who are all too eager to catch you. 
 

@@ -6,7 +6,7 @@ const { projects, initialDelay, anchorElmt } = Astro.props;
 const imageGetters = import.meta.glob<{ default: ImageMetadata }>('/src/assets/posters/**/*.{png,jpg,jpeg}');
 ---
 
-<div class="grid grid-cols-1 gap-6 my-6 lg:grid-cols-2">
+<div class="grid grid-cols-1 gap-6 my-6 md:grid-cols-2">
     { projects.map((project : any, idx : number) => {
         const delay = parseInt(initialDelay) + idx * 200;
         return <ProjectCard  

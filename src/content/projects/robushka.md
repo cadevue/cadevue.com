@@ -5,6 +5,7 @@ poster: {
     alt: Robushka Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
+priority: 9
 ---
 
 ## Description
