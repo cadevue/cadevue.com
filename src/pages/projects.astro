@@ -30,14 +30,14 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
             <p class="text-main-black mb-4" data-aos="fade-up" data-aos-delay="400">
                 I'm still compiling all the projects I've worked on, but these are some!
             </p>
-            <div class="w-full flex flex-col justify-between gap-2 lg:flex-row lg:gap-10">
-                <div class="mt-6 h-fit w-full lg:w-52">
+            <div class="w-full h-fit flex flex-col justify-between gap-2 lg:flex-row lg:gap-10">
+                <div class="mt-4 h-fit w-full lg:w-48 lg:mt-6">
                     <p data-aos="fade-up" data-aos-delay="600">Filter by Tags</p>
                     <div class="flex flex-wrap gap-2 mt-2 lg:mt-4 lg:w-52">
                         <Chip label="All" value="all" aos={{ type: "fade-up", delay: "700" }}/>
                         {
                             allTags.map((tag : string, idx : number) => {
-                                const delay = 700 + idx * 75;
+                                const delay = 700 + idx * 100;
                                 return <Chip 
                                     label={tag} value={tag.toLocaleLowerCase().replace(/\s/g, '-')}
                                     aos={{ type: "fade-up", delay: delay.toString() }}
@@ -46,21 +46,13 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
                         }
                     </div>
                 </div>
+                <div class="h-0.5 w-full bg-main-gray mt-4 mb-2 lg:mb-0 lg:w-1 lg:h-screen"
+                    data-aos="fade-up" data-aos-delay={(700 + allTags.length * 100).toString()}
+                />
                 <div class="flex-1">
-                    <PortfolioGrid projects={sortedProjects} initialDelay={750} anchorElmt="#portfolio-start"/>
+                    <PortfolioGrid projects={sortedProjects} initialDelay={800} anchorElmt="#portfolio-start"/>
                 </div>
             </div>
-            <!-- <p class="text-main-black mb-8" data-aos="fade-up" data-aos-delay="400">
-                Currently still compiling all the projects I've worked on. Please check back later. If you want more details, feel free to contact me!
-            </p> -->
-            <!-- <div class="flex-1 text-main-light flex flex-col gap-2 mt-12 w-full">
-                <span class="mb-12">
-                    <BackButton />
-                </span>
-                <h1>Under Construction</h1>
-                <p class="text-main-gray">I'm currently still compiling all the projects I've worked on. Please check back later. If you want more details, please contact me!</p>
-                <a href="/" class="text-main-light hover:text-main-red underline mt-5 w-fit">Go back to home</a>
-            </div> -->
         </ContentLayout>
     </main>
 </BaseLayout>
