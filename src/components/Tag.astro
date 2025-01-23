@@ -1,4 +1,8 @@
 ---
+interface Props {
+    name: string
+}
+
 const { name } = Astro.props;
 
 const query = name.toLowerCase().replace(/\s/g, '-');

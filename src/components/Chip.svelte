@@ -1,18 +1,30 @@
 <script>
     import { activeFilters } from "../state.svelte";
 
-    let { label, initialValue } = $props();
-    let active = $state(initialValue);
-    activeFilters.tags = initialValue ? [...activeFilters.tags, label] : activeFilters.tags;
+    let { label, active } = $props();
+    let isActive = $state(active);
+
+
+    const updateFilter = () => {
+        const appearInFilter = activeFilters.tags.includes(label);
+
+        if (appearInFilter && !$state.snapshot(isActive)) {
+            activeFilters.tags.splice(activeFilters.tags.indexOf(label), 1);
+        } else if (!appearInFilter && $state.snapshot(isActive)) {
+            activeFilters.tags.push(label);
+        }
+    }
 
     const handleClick = () => {
-        active = !active;
-        activeFilters.tags = active ? [...activeFilters.tags, label] : activeFilters.tags.filter(tag => tag !== label);
+        isActive = !isActive;
+        updateFilter();
     }
+
+    updateFilter();
 </script>
 
 <button class={`px-3 py-1 border rounded-md
-        ${active ? "border-main-red bg-main-red text-main-light" : "border-main-gray bg-none text-main-black"}`
+        ${isActive ? "border-main-red bg-main-red text-main-light" : "border-main-gray bg-none text-main-black"}`
     }
     onclick={handleClick}
 >

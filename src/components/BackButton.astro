@@ -1,4 +1,9 @@
 ---
+interface Props {
+    text?: string
+    light?: boolean
+}
+
 const { text, light = true } = Astro.props
 const fill = light ? 'fill-main-light' : 'fill-main-dark'
 ---

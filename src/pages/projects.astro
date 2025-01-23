@@ -36,7 +36,7 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
                     <div class="flex flex-wrap gap-2 mt-2 lg:mt-4 lg:w-52" data-aos="fade-up" data-aos-delay="700">
                         {
                             allTags.map((tag : string) => {
-                                return <Chip label={tag} initialValue={true} client:load />
+                                return <Chip label={tag} active={true} client:load />
                             })
                         }
                     </div>
@@ -45,7 +45,7 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
                     data-aos="fade-up" data-aos-delay={(700 + allTags.length * 100).toString()}
                 />
                 <div class="flex-1">
-                    <FilteredPortfolioGrid projects={sortedProjects} initialDelay={800} anchorElmt="#portfolio-start" client:load/>
+                    <FilteredPortfolioGrid projects={sortedProjects} appearDelay={800} anchorElmt="#portfolio-start" client:load/>
                 </div>
             </div>
         </ContentLayout>

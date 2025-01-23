@@ -1,4 +1,17 @@
 ---
+interface Props {
+    label: string
+    id: string
+    type: astroHTML.JSX.HTMLInputTypeAttribute
+    placeholder: string
+    required: boolean
+    aos?: {
+        type: string
+        delay: number
+        anchor: string
+    }
+}
+
 const { label, id, type, placeholder, required, aos } = Astro.props
 ---
 

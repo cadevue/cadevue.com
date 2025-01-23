@@ -21,15 +21,6 @@
                     { tag }
                 </a>
             {/each}
-            <!-- {
-                tags.map((tag : string) => {
-                    const path =`/projects?tag=${tag.toLocaleLowerCase().replace(/\s/g, '-')}`;
-                    return <a href={path} class="text-main-light bg-main-red rounded-full px-2 py-0.5 text-xs 
-                        lg:text-sm no-underline hover:text-main-light">
-                        { tag }
-                    </a>
-                })
-            } -->
         </div>
     </div>
 </div>

@@ -2,10 +2,10 @@
     import PortfolioGrid from "./PortfolioGrid.svelte";
     import { activeFilters } from "../state.svelte.js";
 
-    let { projects, initialDelay, anchorElmt } = $props();
+    let { projects, appearDelay, anchorElmt } = $props();
 
     $effect(() => {
-        initialDelay = 0;
+        appearDelay = 0;
     });
 
     const filterProjectsByTags = (project) => {
@@ -17,5 +17,5 @@
 </script>
 
 <PortfolioGrid projects={projects.filter(filterProjectsByTags)}
-    initialDelay={initialDelay} anchorElmt={anchorElmt} 
+    appearDelay={appearDelay} anchorElmt={anchorElmt}
 />

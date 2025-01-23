@@ -1,6 +1,6 @@
 <script>
     import ProjectCard from "./ProjectCard.svelte";
-    const { projects, initialDelay, anchorElmt } = $props();
+    const { projects, appearDelay, anchorElmt } = $props();
 </script>
 
 
@@ -15,7 +15,7 @@
                 img={project.data.poster.src}
                 alt={project.data.poster.alt} 
                 slug={project.slug} 
-                aos={{ type: "fade-up",  delay: initialDelay + idx * 200, anchor: anchorElmt }}
+                aos={{ type: "fade-up",  delay: appearDelay + idx * 200, anchor: anchorElmt }}
             />
         {/each}
     {/if}

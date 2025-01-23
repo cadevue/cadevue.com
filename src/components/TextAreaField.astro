@@ -1,4 +1,17 @@
 ---
+interface Props {
+    label: string
+    id: string
+    rows: number
+    placeholder: string
+    required: boolean
+    aos?: {
+        type: string
+        delay: number
+        anchor: string
+    }
+}
+
 const { label, id, rows, placeholder, required, aos } = Astro.props
 ---
 
