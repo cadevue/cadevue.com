@@ -1,7 +1,7 @@
 ---
 title: Pawdemic
 poster: {
-    src: /src/assets/posters/poster-pawdemic.png,
+    src: https://i.imgur.com/bBeH7yQ.png,
     alt: Pawdemic Poster
 }
 tags: ["Game Dev", "Unity", "C#"]

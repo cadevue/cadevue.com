@@ -16,21 +16,10 @@ export const getStaticPaths = async () => {
 const { project } = Astro.props;
 const { Content } = await project.render();
 
-// Dynamic Image Import
-import { Image } from 'astro:assets';
-import type { ImageMetadata } from 'astro';
 import Tag from '../../components/Tag.astro';
 import BackButton from '../../components/BackButton.astro';
 
 const { src, alt } = project.data.poster;
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*.{png,jpg,jpeg}');
-
-const getPoster = images[src];
-if (!getPoster) {
-    throw new Error(`Image not found: ${src}`);
-}
-
-const poster = getPoster();
 ---
 
 <BaseLayout title=`${project.data.title} - Moonwr Portfolio`>
@@ -40,7 +29,7 @@ const poster = getPoster();
                 <div class="flex flex-col gap-6">
                     <BackButton />
                     <h1>{project.data.title}</h1>
-                    <Image src={poster} alt={alt} class="w-full h-auto aspect-video rounded-xl" />
+                    <img src={src} alt={alt} class="w-full h-auto aspect-video rounded-xl" />
                     <div class="flex gap-2 flex-wrap">
                         {
                             project.data.tags.map((tag) => <Tag name={tag} />)

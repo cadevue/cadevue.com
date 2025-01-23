@@ -1,7 +1,7 @@
 ---
 title: One Last Dance
 poster: {
-    src: /src/assets/posters/poster-one-last-dance.png,
+    src: https://imgur.com/fnCfRXU.png,
     alt: One Last Dance Poster
 }
 tags: ["Game Dev", "Unity", "C#"]

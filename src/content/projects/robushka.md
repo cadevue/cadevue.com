@@ -1,7 +1,7 @@
 ---
 title: Robushka
 poster: {
-    src: /src/assets/posters/poster-robushka.png,
+    src: https://i.imgur.com/rTUNBts.png,
     alt: Robushka Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
