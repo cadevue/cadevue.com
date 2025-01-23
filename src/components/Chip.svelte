@@ -4,7 +4,6 @@
     let { label, active } = $props();
     let isActive = $state(active);
 
-
     const updateFilter = () => {
         const appearInFilter = activeFilters.tags.includes(label);
 
