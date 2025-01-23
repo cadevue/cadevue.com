@@ -2,12 +2,12 @@
 interface Props {
     label: string
     id: string
-    rows: number
+    rows: number | string
     placeholder: string
     required: boolean
     aos?: {
         type: string
-        delay: number
+        delay: number | string
         anchor: string
     }
 }
