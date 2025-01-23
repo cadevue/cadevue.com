@@ -4,12 +4,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ContentLayout from "../layouts/ContentLayout.astro";
 import BackButton from "../components/BackButton.astro";
 import ArrowIcon from "../components/ArrowIcon.astro";
-import PortfolioGrid from "../components/PortfolioGrid.astro";
-import Chip from "../components/Chip.astro";
+import FilteredPortfolioGrid from "../components/FilteredPortfolioGrid.svelte";
+import Chip from "../components/Chip.svelte";
 
 const allProjects = await getCollection("projects");
 const sortedProjects = allProjects.sort((a, b) => {
-    return a.data.priority - b.data.priority;
+    return b.data.priority - a.data.priority;
 });
 
 const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))];
@@ -33,15 +33,10 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
             <div class="w-full h-fit flex flex-col justify-between gap-2 lg:flex-row lg:gap-10">
                 <div class="mt-4 h-fit w-full lg:w-48 lg:mt-6">
                     <p data-aos="fade-up" data-aos-delay="600">Filter by Tags</p>
-                    <div class="flex flex-wrap gap-2 mt-2 lg:mt-4 lg:w-52">
-                        <Chip label="All" value="all" aos={{ type: "fade-up", delay: "700" }}/>
+                    <div class="flex flex-wrap gap-2 mt-2 lg:mt-4 lg:w-52" data-aos="fade-up" data-aos-delay="700">
                         {
-                            allTags.map((tag : string, idx : number) => {
-                                const delay = 700 + idx * 100;
-                                return <Chip 
-                                    label={tag} value={tag.toLocaleLowerCase().replace(/\s/g, '-')}
-                                    aos={{ type: "fade-up", delay: delay.toString() }}
-                                />
+                            allTags.map((tag : string) => {
+                                return <Chip label={tag} initialValue={true} client:load />
                             })
                         }
                     </div>
@@ -50,7 +45,7 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
                     data-aos="fade-up" data-aos-delay={(700 + allTags.length * 100).toString()}
                 />
                 <div class="flex-1">
-                    <PortfolioGrid projects={sortedProjects} initialDelay={800} anchorElmt="#portfolio-start"/>
+                    <FilteredPortfolioGrid projects={sortedProjects} initialDelay={800} anchorElmt="#portfolio-start" client:load/>
                 </div>
             </div>
         </ContentLayout>

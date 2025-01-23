@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import ContentLayout from "../layouts/ContentLayout.astro";
 import ArrowIcon from "./ArrowIcon.astro";
-import PortfolioGrid from "./PortfolioGrid.astro";
+import PortfolioGrid from "./PortfolioGrid.svelte";
 
 const curatedProjectIds = ["pawdemic", "robushka", "one-last-dance"];
 const allProjects = await getCollection("projects");
@@ -11,7 +11,6 @@ const curatedProjects = curatedProjectIds.map((id) => {
     return allProjects.find((project) => project.slug === id);
 });
 
-// Interactivity Settings
 const portofolioGridDelay = 600
 const allProjectsLinkDelay = portofolioGridDelay + 200 * curatedProjects.length
 ---
