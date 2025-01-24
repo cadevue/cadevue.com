@@ -30,7 +30,7 @@ const allProjectsLinkDelay = portofolioGridDelay + 200 * curatedProjects.length
         </p>
         <PortfolioGrid projects={curatedProjects} appearDelay={portofolioGridDelay} anchorElmt="#portfolio-start"/>
         <p class="mt-16" data-aos="fade-up" data-aos-delay={allProjectsLinkDelay} data-aos-anchor="#portfolio-start">
-            <a href="/projects" class="text-main-black">View all projects</a>
+            <a href="/projects" class="text-main-black" data-astro-prefetch>View all projects</a>
         </p>
     </ContentLayout>
 </section>

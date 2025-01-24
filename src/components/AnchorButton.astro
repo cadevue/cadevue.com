@@ -14,6 +14,7 @@ const { title, href='/', aos } = Astro.props
 <a class="bg-main-red px-6 py-1 rounded-full flex gap-3 items-center w-fit no-underline" href={href}
     data-aos={aos?.type} data-aos-duration={aos?.duration} data-aos-delay={aos?.delay} data-aos-once={aos?.once}
     data-aos-offset={aos?.offset} data-aos-anchor={aos?.anchor}
+    data-astro-prefetch
 >
     <p class="text-lg text-main-light font-bold sm:text-2xl">{title}</p>
     <span class="-rotate-45">

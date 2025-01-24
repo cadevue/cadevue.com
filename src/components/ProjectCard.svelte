@@ -5,7 +5,9 @@
 <div class="relative w-full aspect-video rounded-lg"
     data-aos={aos?.type} data-aos-anchor={aos?.anchor} data-aos-delay={aos?.delay}
 >
-    <a class="absolute bottom-0 w-full bg-main-gray flex items-end no-underline" href={`/project/${slug}`}>
+    <a class="absolute bottom-0 w-full bg-main-gray flex items-end no-underline" href={`/project/${slug}`}
+        data-astro-prefetch
+    >
         <img src={img} alt={alt} class="w-full aspect-video rounded-lg"/>
     </a>
     <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light px-6 py-6 flex flex-col justify-end 
@@ -17,6 +19,7 @@
                 <a href={`/projects?tag=${tag.toLocaleLowerCase().replace(/\s/g, '-')}`} 
                     class="text-main-light bg-main-red rounded-full px-2 py-0.5 text-xs 
                     lg:text-sm no-underline hover:text-main-light"
+                    data-astro-prefetch='hover'
                 >
                     { tag }
                 </a>
