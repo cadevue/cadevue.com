@@ -8,7 +8,7 @@ const { text, light = true } = Astro.props
 const fill = light ? 'fill-main-light' : 'fill-main-dark'
 ---
 
-<button class="flex items-center gap-4 group" id="back-button" onclick="history.back()">
+<button class="flex items-center gap-4 group" id="back-button" onclick="history.back()" name="Back Button">
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
         class=`
             ${ text ? 'w-6 h-6 sm:w-6 sm:h-6' : 'w-8 h-8 sm:w-8 sm:h-8'}
