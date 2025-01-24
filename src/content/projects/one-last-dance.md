@@ -1,7 +1,7 @@
 ---
 title: One Last Dance
 poster: {
-    src: https://imgur.com/fnCfRXU.png,
+    src: https://ik.imagekit.io/moonwr/poster-one-last-dance.png,
     alt: One Last Dance Poster
 }
 tags: ["Game Dev", "Unity", "C#"]

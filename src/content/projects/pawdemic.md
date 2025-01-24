@@ -1,7 +1,7 @@
 ---
 title: Pawdemic
 poster: {
-    src: https://i.imgur.com/bBeH7yQ.png,
+    src: https://ik.imagekit.io/moonwr/poster-pawdemic.png,
     alt: Pawdemic Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
