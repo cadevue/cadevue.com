@@ -5,7 +5,6 @@ import ContentLayout from "../layouts/ContentLayout.astro";
 import BackButton from "../components/BackButton.astro";
 import ArrowIcon from "../components/ArrowIcon.astro";
 import FilteredPortfolioGrid from "../components/FilteredPortfolioGrid.svelte";
-import Chip from "../components/Chip.svelte";
 
 const allProjects = await getCollection("projects");
 const sortedProjects = allProjects.sort((a, b) => {
@@ -30,23 +29,7 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
             <p class="text-main-black mb-4" data-aos="fade-up" data-aos-delay="400">
                 I'm still compiling all the projects I've worked on, but these are some!
             </p>
-            <div class="w-full h-fit flex flex-col justify-between gap-2 lg:flex-row lg:gap-10">
-                <div class="mt-4 h-fit w-full lg:w-48 lg:mt-6">
-                    <p data-aos="fade-up" data-aos-delay="600">Filter by Tags</p>
-                    <div class="flex flex-wrap gap-2 mt-2 lg:mt-4 lg:w-52" data-aos="fade-up" data-aos-delay="700">
-                        {
-                            allTags.map((tag : string) => {
-                                return <Chip label={tag} active={true} client:visible />
-                            })
-                        }
-                    </div>
-                </div>
-                <div class="h-0.5 w-full bg-main-gray mt-4 mb-2 lg:mb-0 lg:w-1 lg:h-screen"
-                    data-aos="fade-up" data-aos-delay={(700 + allTags.length * 100).toString()}
-                />
-                <div class="flex-1">
-                    <FilteredPortfolioGrid projects={sortedProjects} appearDelay={800} anchorElmt="#portfolio-start" client:load/>
-                </div>
+            <FilteredPortfolioGrid projects={sortedProjects} tags={allTags} appearDelay={800} anchorElmt="#portfolio-start" client:visible />
             </div>
         </ContentLayout>
     </main>

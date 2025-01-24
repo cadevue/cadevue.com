@@ -1,4 +1,6 @@
 <script>
+    import { labelToTagValue } from "../utils";
+
     const { title, tags, img, alt, slug, aos } = $props();
 </script>
 
@@ -23,7 +25,7 @@
         <h2>{title}</h2>
         <div class="flex gap-2.5 pointer-events-auto flex-wrap">
             {#each tags as tag}
-                <a href={`/projects?tag=${tag.toLocaleLowerCase().replace(/\s/g, '-')}`} 
+                <a href={`/projects?tag=${labelToTagValue(tag)}`} 
                     class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-sm 
                     lg:text-base no-underline hover:text-main-light"
                     data-astro-prefetch='hover'

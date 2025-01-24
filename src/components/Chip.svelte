@@ -1,25 +1,17 @@
 <script>
     import { activeFilters } from "../state.svelte";
+    import { labelToTagValue } from "../utils";
 
-    let { label, active } = $props();
-    let isActive = $state(active);
-
-    const updateFilter = () => {
-        const appearInFilter = activeFilters.tags.includes(label);
-
-        if (appearInFilter && !$state.snapshot(isActive)) {
-            activeFilters.tags.splice(activeFilters.tags.indexOf(label), 1);
-        } else if (!appearInFilter && $state.snapshot(isActive)) {
-            activeFilters.tags.push(label);
-        }
-    }
+    let { label } = $props();
+    let isActive = $derived(activeFilters.tags.includes(labelToTagValue(label)));
 
     const handleClick = () => {
-        isActive = !isActive;
-        updateFilter();
+        if (isActive) {
+            activeFilters.tags = activeFilters.tags.filter(tag => tag !== labelToTagValue(label));
+        } else {
+            activeFilters.tags = [...activeFilters.tags, labelToTagValue(label)];
+        }
     }
-
-    updateFilter();
 </script>
 
 <button class={`px-3 py-1 border rounded-md

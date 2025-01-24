@@ -6,7 +6,7 @@
 
 <div class="grid grid-cols-1 gap-6 my-6 md:grid-cols-2">
     {#if projects.length === 0}
-        <p class="text-main-light">No projects found</p>
+        <p class="text-main-black">No projects found</p>
     {:else}
         {#each projects as project, idx}
             <ProjectCard  
