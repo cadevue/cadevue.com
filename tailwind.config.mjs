@@ -8,7 +8,7 @@ export default {
 			},
 			colors: {
 				'main-red'	: '#BA3A2C',
-				'light-red'	: '#CA3A2A',
+				'light-red'	: '#FF432F',
 				'main-black': '#202020',
 				'main-light': '#F6F4F1',
 				'main-gray': '#D9D9D9',
