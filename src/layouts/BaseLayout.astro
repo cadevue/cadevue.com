@@ -46,17 +46,19 @@ const { title = "Game, Web, and XR Developer - Moonwr Portfolio" } = Astro.props
 	/* Font Import */
 	@font-face {
 		font-family: "Telegraf";
-		src: url("/fonts/PPTelegraf-Regular.otf");
+		src: url("/fonts/PPTelegraf-Regular.woff2") format("woff2"),
+			url("/fonts/PPTelegraf-Regular.woff") format("woff"),
+			url("/fonts/PPTelegraf-Regular.otf") format("opentype");
 		font-weight: normal;
-		font-style: normal;
 		font-display: swap;
 	}
 
 	@font-face {
 		font-family: "Telegraf";
-		src: url("/fonts/PPTelegraf-UltraBold.otf");
+		src: url("/fonts/PPTelegraf-UltraBold.woff2") format("woff2"),
+			url("/fonts/PPTelegraf-UltraBold.woff") format("woff"),
+			url("/fonts/PPTelegraf-UltraBold.otf") format("opentype");
 		font-weight: bold;
-		font-style: normal;
 		font-display: swap;
 	}
 
