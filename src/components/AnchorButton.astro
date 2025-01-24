@@ -3,12 +3,12 @@ import type { AOSParams } from "../types"
 import ArrowIcon from "./ArrowIcon.astro"
 
 interface Props {
-    title: string
+    label: string
     href?: string
     aos?: AOSParams
 }
 
-const { title, href='/', aos } = Astro.props
+const { label: title, href='/', aos } = Astro.props
 ---
 
 <a class="bg-main-red px-6 py-1 rounded-full flex gap-3 items-center w-fit no-underline" href={href}
