@@ -3,7 +3,10 @@ import { ClientRouter } from "astro:transitions"
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
 
-const { title = "Game, Web, and XR Developer - Moonwr Portfolio" } = Astro.props
+const { 
+	title = "Game and Web Developer - Moonwr Portfolio", 
+	description = "Portfolio website of Addin Munawwar (moonwr.dev), software engineer specialized in video game and web development."
+} = Astro.props
 ---
 
 <!doctype html>
@@ -15,6 +18,7 @@ const { title = "Game, Web, and XR Developer - Moonwr Portfolio" } = Astro.props
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
 		<title>{title}</title>
 		<ClientRouter fallback="swap" />
 	</head>

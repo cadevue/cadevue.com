@@ -11,14 +11,14 @@
         <img src={img} alt={alt} class="w-full aspect-video rounded-lg"/>
     </a>
     <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light px-6 py-6 flex flex-col justify-end 
-        bg-gradient-to-t from-main-black to-transparent rounded-lg pointer-events-none
+        bg-gradient-to-t from-main-black to-transparent rounded-lg pointer-events-none gap-2
     ">
         <h2>{title}</h2>
-        <div class="flex gap-2 pointer-events-auto flex-wrap">
+        <div class="flex gap-2.5 pointer-events-auto flex-wrap">
             {#each tags as tag}
                 <a href={`/projects?tag=${tag.toLocaleLowerCase().replace(/\s/g, '-')}`} 
-                    class="text-main-light bg-main-red rounded-full px-2 py-0.5 text-xs 
-                    lg:text-sm no-underline hover:text-main-light"
+                    class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-sm 
+                    lg:text-base no-underline hover:text-main-light"
                     data-astro-prefetch='hover'
                 >
                     { tag }

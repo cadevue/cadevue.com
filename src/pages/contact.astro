@@ -15,8 +15,12 @@ import BackButton from '../components/BackButton.astro';
         <ContentLayout>
             <main class="flex flex-col gap-2 max-w-2xl z-10">
                 <h1 data-aos="fade-up" id="contact-start">Let's Get in Touch!</h1>
-                <p data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#contact-start">You could write me a message from the form below.</p>
-                <form class="flex flex-col gap-3 z-10">
+                <p data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#contact-start">
+                    You could write me a message from the form below.
+                </p>
+                <form class="flex flex-col gap-3 z-10" 
+                    action="https://formspree.io/f/mqaekrby" method="post" 
+                >
                     <TextField label="Name" id="name" type="text" placeholder="Walter White" required
                         aos={{ type: "fade-up", delay: "500", anchor: "#contact-start" }}
                     />
@@ -39,13 +43,8 @@ import BackButton from '../components/BackButton.astro';
 </BaseLayout>
 
 <script>
-    const form = document.querySelector('form') as HTMLFormElement;
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const formData = new FormData(form);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
-        console.log({name, email, message});
-    });
+    // const form = document.querySelector('form') as HTMLFormElement;
+    // form.addEventListener('submit', (event) => {
+    //     event.preventDefault();
+    // });
 </script>

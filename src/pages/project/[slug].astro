@@ -22,7 +22,7 @@ import BackButton from '../../components/BackButton.astro';
 const { src, alt } = project.data.poster;
 ---
 
-<BaseLayout title=`${project.data.title} - Moonwr Portfolio`>
+<BaseLayout title=`${project.data.title} - Moonwr Portfolio` description={project.data.meta_description}>
     <ContentLayout>
         <div class="w-full flex justify-center">
             <main class="text-main-light max-w-4xl flex flex-col gap-8">

@@ -5,11 +5,12 @@ poster: {
     alt: Robushka Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
+meta_description: A relaxing puzzle game inspired by Matryoshka dolls for GMTK Game Jam 2024.
 priority: 9
 ---
 
 ## Description
-A puzzle game inspired by Matryoshka dolls. Help each Robushka to get inside their largest parent in this relaxing puzzle game.  Hop in and out of different sized Robushkas to finish each level. 
+A puzzle game inspired by Matryoshka dolls. Help each Robushka to get inside their largest parent in this relaxing puzzle game. Hop in and out of different sized Robushkas to finish each level. 
 
 This game was made for the GMTK Game Jam 2024 with the theme 'Built to Scale'.
 
