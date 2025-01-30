@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
     "@astrojs/svelte": "^7.0.4",
     "@astrojs/tailwind": "^5.1.4",
     "aos": "^2.3.4",
