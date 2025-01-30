@@ -5,7 +5,7 @@ poster: {
     alt: Pawdemic Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
-meta_description: A game about a cat god invading city with its cat army, spreading feline domination and love. For Gameseed 2024.
+meta_description: A game about a cat god invading city with its cat army, spreading feline domination and love. For Gameseed 2024. Addin Munawwar (Cadevue).
 priority: 10
 ---
 

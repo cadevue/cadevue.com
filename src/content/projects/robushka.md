@@ -5,7 +5,7 @@ poster: {
     alt: Robushka Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
-meta_description: A relaxing puzzle game inspired by Matryoshka dolls for GMTK Game Jam 2024.
+meta_description: A relaxing puzzle game inspired by Matryoshka dolls for GMTK Game Jam 2024. Addin Munawwar (Cadevue).
 priority: 9
 ---
 
