@@ -5,7 +5,7 @@ poster: {
     alt: Robushka Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
-meta_description: A relaxing puzzle game inspired by Matryoshka dolls for GMTK Game Jam 2024. Addin Munawwar (Cadevue).
+meta_description: A puzzle game inspired by Matryoshka dolls. Help each Robushka to get inside their largest parent in this relaxing puzzle game. Hop in and out of different sized Robushkas to finish each level. Addin Munawwar (Cadevue).
 priority: 9
 ---
 
