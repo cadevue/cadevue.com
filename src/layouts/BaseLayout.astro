@@ -27,10 +27,10 @@ const {
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4K8VQ6F7P"></script>
 		<script>
+			// @ts-nocheck
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'G-N4K8VQ6F7P');
 		</script>
 	</head>
@@ -83,27 +83,27 @@ const {
 	@tailwind utilities;
 
 	h1 {
-		@apply text-2xl font-bold sm:text-4xl 2xl:text-5xl
+		@apply text-3xl font-bold sm:text-4xl 3xl:text-5xl
 	}
 
 	h2 {
-		@apply text-xl font-bold sm:text-2xl 2xl:text-3xl;
+		@apply text-xl font-bold sm:text-3xl 3xl:text-3xl;
 	}
 
 	h3 {
-		@apply text-lg font-bold sm:text-xl 2xl:text-2xl;
+		@apply text-lg font-bold sm:text-xl 3xl:text-3xl;
 	}
 
 	p {
-		@apply text-base sm:text-xl 2xl:text-2xl;
+		@apply text-base sm:text-xl 3xl:text-3xl;
 	}
 
 	a {
-		@apply text-base sm:text-xl underline text-main-light hover:text-main-red 2xl:text-2xl;
+		@apply text-base sm:text-xl underline text-main-light hover:text-main-red 3xl:text-3xl;
 	}
 
 	li {
-		@apply text-base sm:text-xl 2xl:text-2xl;
+		@apply text-base sm:text-xl 3xl:text-3xl;
 	}
 </style>
 
