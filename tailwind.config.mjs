@@ -18,7 +18,10 @@ export default {
 			},
 			minHeight: {
 				'1.25s': '125vh',
-			}
+			},
+			maxWidth: {
+				'8xl': '90rem',
+			},
 		},
 	},
 	plugins: [],
