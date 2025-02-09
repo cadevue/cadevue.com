@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 
-import AnchorButton from './AnchorButton.astro'
+import AnchorButton from '../components/AnchorButton.astro'
 import personaImage from '../assets/persona.jpg'
 import ContentLayout from '../layouts/ContentLayout.astro'
 ---
@@ -12,14 +12,15 @@ import ContentLayout from '../layouts/ContentLayout.astro'
             <Image src={personaImage} alt="Addin Munawwar" class="w-48 aspect-square rounded-full sm:w-64 3xl:w-80"
                 data-aos="fade-up" id="hero-start"
             />
-            <div class="flex flex-col items-center gap-2 text-center max-w-xs sm:gap-2 sm:max-w-lg 3xl:max-w-xl">
-                <div class="flex flex-col">
+            <div class="flex flex-col items-center gap-3 text-center max-w-xs sm:max-w-lg 3xl:max-w-xl">
+                <div class="flex flex-col items-center">
                     <h1 data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#hero-start">
                         Addin Munawwar
                     </h1>
-                    <p class="font-bold text-xl sm:text-2xl 3xl:text-3xl" data-aos="fade-up" data-aos-delay="450" data-aos-anchor="#hero-start">
-                        or Cadevue
-                    </p>
+                    <div class="bg-main-darker text-gray-300 text-center font-mono px-6 py-1 rounded-xl items-center w-fit" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#hero-start">
+                        <span class="font-bold text-white">Cadevue</span>
+                        <span>👾🚀</span>
+                    </div>
                 </div>
                 <p class="sm:text-xl 3xl:text-2xl" data-aos="fade-up" data-aos-delay="550" data-aos-anchor="#hero-start">
                     A creative, passionate learner and software engineer specialized in video game and web development.

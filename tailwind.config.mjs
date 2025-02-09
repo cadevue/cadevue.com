@@ -10,6 +10,7 @@ export default {
 				'main-red'	: '#BA3A2C',
 				'light-red'	: '#FA4430',
 				'main-black': '#202020',
+				'main-darker': '#181818',
 				'main-light': '#F6F4F1',
 				'main-gray': '#D9D9D9',
 			},
