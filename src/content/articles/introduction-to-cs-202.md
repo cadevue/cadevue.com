@@ -1,6 +1,6 @@
 ---
 title: Introduction to CS-202
-meta_description: CS-202 is a challenge to revisit all the subjects in the computer science major. This mainly includes an effort to compile, curate, refine, even redone some of the projects worked on during education period (thus, polishing the portfolio) and understand the CS fundamentals at the deeper level. Addin Munawwar (Cadevue).
+meta_description: CS-202 is a challenge to revisit all the subjects in the computer science major. This mainly includes an effort to compile, curate, refine, even redone some of the projects worked on during education period (thus, polishing the portfolio) and understand the CS fundamentals at the deeper level.
 date_published: 2025-02-09
 date_last_updated: 2025-02-09
 ---
@@ -23,6 +23,8 @@ This is a very flexible list! I can and probably will add or remove subjects as 
 
 ### About Timeline and Order
 
+
 ### Some subjects I currently skipped over
+
 
 ## Closing Notes 📝
