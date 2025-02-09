@@ -3,7 +3,20 @@ title: Introduction to CS-202
 meta_description: CS-202 is a challenge to revisit all the subjects in the computer science major. This mainly includes an effort to compile, curate, refine, even redone some of the projects worked on during education period (thus, polishing the portfolio) and understand the CS fundamentals at the deeper level.
 date_published: 2025-02-09
 date_last_updated: 2025-02-09
+is_published: true
 ---
+
+<img 
+    src="https://ik.imagekit.io/moonwr/cs202.png"
+    srcset="
+        https://ik.imagekit.io/moonwr/cs202.png?tr=f-avif,w-480 480w,
+        https://ik.imagekit.io/moonwr/cs202.png?tr=f-avif,w-768 768w,
+        https://ik.imagekit.io/moonwr/cs202.png?tr=f-avif,w-1200 1200w,
+    "
+    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1200px"
+    alt="CS-202 Banner"
+    class="rounded-md mb-4"
+/>
 
 ## What is CS-202 ❓
 CS-202 is a challenge I made myself to revisit all the subjects in the computer science world. This mainly includes an effort to compile, curate, refine, even redone some of the projects I’ve worked on during my education (thus, polishing the portfolio) and understand the CS fundamentals at the deeper level. This is an open challenge that you can also participate in, but you have to adapt it to your own needs and goals!

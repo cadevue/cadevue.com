@@ -7,7 +7,8 @@ import ArticlePreview from "../components/ArticlePreview.astro";
 const allArticles = await getCollection("articles");
 const recentArticles = allArticles.sort((a, b) => 
     a.data.date_last_updated < b.data.date_last_updated ? 1 : -1)
-    .slice(0, 3); // Take to 3 most recent articles
+    .filter((article) => article.data.is_published)
+    .slice(0, 3);
 ---
 
 <section class="w-full bg-main-black py-20 sm:py-32 relative text-main-light">
