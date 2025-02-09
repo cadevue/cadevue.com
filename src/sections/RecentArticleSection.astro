@@ -5,13 +5,15 @@ import ArrowIcon from "../components/ArrowIcon.astro";
 import ArticlePreview from "../components/ArticlePreview.astro";
 
 const allArticles = await getCollection("articles");
-const recentArticles = allArticles.sort((a, b) => a.data.date_last_updated < b.data.date_last_updated ? 1 : -1).slice(0, 3);
+const recentArticles = allArticles.sort((a, b) => 
+    a.data.date_last_updated < b.data.date_last_updated ? 1 : -1)
+    .slice(0, 3); // Take to 3 most recent articles
 ---
 
 <section class="w-full bg-main-black py-20 sm:py-32 relative text-main-light">
     <ContentLayout>
         <div class="bg-main-darker text-gray-300 font-mono px-2 py-1 rounded-xl items-center w-fit" data-aos="fade-up" data-aos-delay="200" id="article-start">
-            <span class="text-white">I write some articles to if you're interested!</span>
+            <span class="text-white">I write some articles too! 😄</span>
         </div>
         <div class="flex items-center gap-2 mt-10" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#article-start">
             <h1 class="mt-1">Recent Articles</h1>
