@@ -23,21 +23,21 @@ CS-202 is a challenge I made myself to revisit all the subjects in the computer 
 
 ## Goals 🎯
 The goals of CS-202 is mainly two things:
-1. Refining the portfolio
-2. Enhancing the understanding of the CS fundamentals
+1. Refining the portfolio projects,
+2. Enhancing the understanding of the CS fundamentals.
 
 ## My Roadmap 🗺️
 I have reviewed all the subjects in the computer science major and extracted the most important topics and projects that I need to revisit. This is my own roadmap of course, which is tightly tied to my university curriculum and highly subjective. If you came from different background, you might need to adjust the roadmap to your own needs.
 
-My roadmap is as follows:
-
+My roadmap is as follows: <br>
+*\[To be Decided]*
 
 This is a very flexible list! I can and probably will add or remove subjects as I see fit. What I can see is this list will be extended as I go through the challenge and become part of my life-long learning journey.
 
 ### About Timeline and Order
-
+*\[To Be Decided]*
 
 ### Some subjects I currently skipped over
+*\[To Be Decided]*
 
-
-## Closing Notes 📝
+<!-- ## Closing Notes 📝 -->
