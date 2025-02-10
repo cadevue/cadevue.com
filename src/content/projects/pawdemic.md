@@ -15,7 +15,3 @@ Collect cats and spread feline domination in this chaotic action-stealth game! B
 This game was the **2nd place winner** of **Student Category** in the **Gameseed 2024**, the biggest National Game Development Competition in Indonesia based on number of participants. This game is also showcased in <a href="https://www.igdx.id/" target="_blank" rel="noopener noreferrer">Indonesia Game Developer Exchange (IGDX)</a> 2024, the biggest game developer business event in Indonesia. The event was held in Bali, Indonesia.
 
 <a href="https://noart278.itch.io/pawdemic" target="_blank" rel="noopener noreferrer">To Itch.io Page</a><br><br>
-
-## Important Note
-This website is currently still undergoing development. All of the projects and more details about each project will be added gradually. If you have any question, feel free to contact me 😊
-

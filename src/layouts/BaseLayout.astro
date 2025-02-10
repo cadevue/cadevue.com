@@ -87,7 +87,7 @@ const {
 	}
 
 	h2 {
-		@apply text-xl font-bold sm:text-2xl 3xl:text-3xl;
+		@apply text-2xl font-bold sm:text-3xl 3xl:text-4xl;
 	}
 
 	h3 {
@@ -95,7 +95,7 @@ const {
 	}
 
 	p {
-		@apply text-base sm:text-xl 3xl:text-2xl;
+		@apply text-base sm:text-xl/8 3xl:text-2xl/10;
 	}
 
 	span {
@@ -108,6 +108,14 @@ const {
 
 	li {
 		@apply text-base sm:text-xl 3xl:text-2xl;
+	}
+
+	pre {
+		@apply p-5;
+	}
+
+	pre span {
+		@apply text-sm font-mono;
 	}
 </style>
 
