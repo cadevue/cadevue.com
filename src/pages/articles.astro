@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import ContentLayout from "../layouts/ContentLayout.astro";
+import ArrowIcon from "../components/ArrowIcon.astro";
+import ArticlePreview from "../components/ArticlePreview.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BackButton from "../components/BackButton.astro";
+
+const allArticles = await getCollection("articles");
+const sortedArticles = allArticles.sort((a, b) => 
+    a.data.date_last_updated < b.data.date_last_updated ? 1 : -1)
+    .filter((article) => article.data.is_published);
+---
+
+<BaseLayout title="All Articles - See Addin Munawwar Posts | Cadevue" description="All articles that Addin Munawwar has written.">
+    <main class="flex-1 bg-main-black py-16 text-main-light">
+        <ContentLayout>
+            <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+                <BackButton light={true} />
+            </div>
+            <div class="flex items-center gap-2 mt-2" data-aos="fade-up" data-aos-delay="200" id='portfolio-start'>
+                <h1 class="mt-1">All Articles</h1>
+                <span class="rotate-45">
+                    <ArrowIcon color="#ba3a2c" size="40px"/>
+                </span>
+            </div>
+            <div class="grid grid-cols-1 gap-10 mt-10">
+                {sortedArticles.map((article, idx) => (
+                    <ArticlePreview 
+                        slug={article.slug} title={article.data.title} 
+                        last_updated={article.data.date_last_updated} description={article.data.meta_description} 
+                        aos={{ type: 'fade-up', delay: `${(600 + idx * 150)}`, anchor: '#article-start' }}
+                    />
+                ))}
+            </div>
+        </ContentLayout>
+    </main>
+</BaseLayout>
