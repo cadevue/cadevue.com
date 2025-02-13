@@ -15,4 +15,15 @@ Collect cats and spread feline domination in this chaotic action-stealth game! B
 
 This game was the **2nd place winner** of **Student Category** in the **Gameseed 2024**, the biggest National Game Development Competition in Indonesia based on number of participants. This game is also showcased in <a href="https://www.igdx.id/" target="_blank" rel="noopener noreferrer">Indonesia Game Developer Exchange (IGDX)</a> 2024, the biggest game developer business event in Indonesia. The event was held in Bali, Indonesia.
 
-<a href="https://noart278.itch.io/pawdemic" target="_blank" rel="noopener noreferrer">To Itch.io Page</a><br><br>
+<a href="https://noart278.itch.io/pawdemic" target="_blank" rel="noopener noreferrer">To Itch.io Page</a>
+<br><br>
+
+# The Gameplay
+### Build a Cat Army
+![Pawdemic - Build a Cat Army](../../assets/project/pawdemic/1.gif)
+
+### Spread Feline Domination
+![Pawdemic - Spread Feline Domination](../../assets/project/pawdemic/2.gif)
+
+### Avoid the Dogs
+![Pawdemic - Avoid the Dogs](../../assets/project/pawdemic/3.gif)

@@ -89,7 +89,7 @@ Here are some documentations of the galaxio bot in action.
 
 <br>
 
-The original bot (SolarSailers) was also being competed with other bots from the course class, and it actually got the 2️nd place! I got this mug as a prize:D
+The original bot (SolarSailers) was also being competed with other bots from student in the course class, and it actually got the 2️nd place! I got this mug as a prize:D
 <br>
 
 ![The Prize - Mug](../../assets/project/galaxio-bot/mug.png)
