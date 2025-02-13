@@ -8,7 +8,6 @@ import Header from "../components/Header.astro"
 const { 
 	title = "Addin Munawwar Portfolio | Cadevue - Software Engineer | Game and Web", 
 	description = "Addin Munawwar (Cadevue), a creative, passionate learner and software engineer specialized in video game and web development. This is the main website!",
-
 } = Astro.props
 ---
 
@@ -22,17 +21,8 @@ const {
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<title>{title}</title>
-		<ClientRouter fallback="swap" />
 
-		<!-- Google tag (gtag.js) -->
-		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4K8VQ6F7P"></script>
-		<script>
-			// @ts-nocheck
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-N4K8VQ6F7P');
-		</script> -->
+		<ClientRouter fallback="swap" />
 	</head>
 	<body class="min-h-1.25s flex flex-col">
 		<Header />
@@ -42,17 +32,14 @@ const {
 			import AOS from 'aos'
 
 			function initAOS() {
-				AOS.init({
-					duration: 750,
-					once: true,
-				});
+				AOS.init({ duration: 750, once: true, });
 			}
-
 			initAOS();
 			
 			document.addEventListener('astro:after-swap', () => {
 				initAOS();
 			});
+
 		</script>
 	</body>
 </html>

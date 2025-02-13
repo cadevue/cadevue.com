@@ -9,7 +9,7 @@ export const getStaticPaths = async () => {
     const paths = projects.map((project) => ({
         params: { slug: project.slug },
         props: { project }
-    }));
+    })).filter((project) => project.props.project.data.is_shown);
     return paths;
 };
 

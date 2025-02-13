@@ -10,6 +10,7 @@ const projectCollection = defineCollection({
         tags: z.array(z.string()),
         meta_description: z.string(),
         priority: z.number(),
+        is_shown: z.boolean(),
     })
 });
 
