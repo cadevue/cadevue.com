@@ -9,7 +9,7 @@ export const getStaticPaths = async () => {
     const paths = articles.map((article) => ({
         params: { slug: article.slug },
         props: { article: article }
-    }));
+    })).filter((article) => article.props.article.data.is_published);
     return paths;
 };
 
