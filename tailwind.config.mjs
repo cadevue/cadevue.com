@@ -23,6 +23,7 @@ export default {
 			maxWidth: {
 				'8xl': '90rem',
 				'5.5xl': '68rem',
+				'content': '42.5rem',
 			},
 			screens: {
 				'3xl': '1680px',
