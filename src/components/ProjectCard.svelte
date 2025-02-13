@@ -22,10 +22,10 @@
     <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light px-6 py-6 flex flex-col justify-end 
         bg-gradient-to-t from-main-black to-transparent rounded-lg pointer-events-none gap-2
     ">
-        <h2>{title}</h2>
-        <div class="flex gap-2.5 pointer-events-auto flex-wrap">
-            {#each tags as tag}
-                <a href={`/projects?tag=${labelToTagValue(tag)}`} 
+        <h2 class="line-clamp-1">{title}</h2>
+        <div class="flex gap-1 pointer-events-auto flex-wrap">
+            {#each tags.slice(0, 3) as tag}
+                <a href={`/projects?tag=${labelToTagValue(tag)}`}
                     class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-sm 
                     lg:text-base no-underline hover:text-main-light"
                     data-astro-prefetch='hover'
@@ -33,6 +33,17 @@
                     { tag }
                 </a>
             {/each}
+
+            <!-- the rest, show ... -->
+            {#if tags.length > 3}
+                <a href={`/project/${slug}`}
+                    class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-sm 
+                    lg:text-base no-underline hover:text-main-light"
+                    data-astro-prefetch='hover'
+                >
+                    ...
+                </a>
+            {/if}
         </div>
     </div>
 </div>

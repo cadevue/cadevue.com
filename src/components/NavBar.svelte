@@ -24,10 +24,10 @@
     <span class="text-2xl">{isOpen ? '✕' : '☰'}</span>
   </button>
   <!-- Navigation links -->
-  <ul class="bg-main-black gap-6 sm:flex text-center" class:hidden={!isOpen}>
-    <li> <a href="/" class="no-underline text-xl mt-4 inline-block sm:mt-0">Home</a> </li>
-    <li> <a href="/projects" class="no-underline text-xl mt-4 inline-block sm:mt-0">Projects</a> </li>
-    <li> <a href="/articles" class="no-underline text-xl mt-4 inline-block sm:mt-0">Articles</a> </li>
-    <li> <a href="/contact" class="no-underline text-xl mt-4 inline-block sm:mt-0">Contact</a> </li>
+  <ul class="bg-main-black gap-6 sm:flex text-center list-none" class:hidden={!isOpen}>
+    <li class="ml-0"> <a href="/" class="no-underline text-xl mt-4 inline-block sm:mt-0">Home</a> </li>
+    <li class="ml-0"> <a href="/projects" class="no-underline text-xl mt-4 inline-block sm:mt-0">Projects</a> </li>
+    <li class="ml-0"> <a href="/articles" class="no-underline text-xl mt-4 inline-block sm:mt-0">Articles</a> </li>
+    <li class="ml-0"> <a href="/contact" class="no-underline text-xl mt-4 inline-block sm:mt-0">Contact</a> </li>
   </ul>
 </nav>

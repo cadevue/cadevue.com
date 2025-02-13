@@ -93,8 +93,20 @@ const {
 		@apply text-base sm:text-xl underline text-main-light hover:text-main-red 3xl:text-2xl;
 	}
 
+	ul {
+		@apply list-disc block list-inside;
+	}
+
+	ol {
+		@apply list-decimal block list-inside;
+	}
+
 	li {
-		@apply text-base sm:text-xl 3xl:text-2xl;
+		@apply ml-6 mb-1 sm:mb-2 text-base sm:text-xl 3xl:text-2xl;
+	}
+
+	code {
+		@apply text-sm font-mono bg-main-darker px-2 py-1 rounded-sm;
 	}
 
 	pre {
