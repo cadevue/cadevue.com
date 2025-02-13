@@ -1,4 +1,5 @@
 ---
+import '../base.css'
 import 'aos/dist/aos.css'
 
 import { ClientRouter } from "astro:transitions"
@@ -43,80 +44,6 @@ const {
 		</script>
 	</body>
 </html>
-
-
-<style is:global>
-	/* Font Import */
-	@font-face {
-		font-family: "Telegraf";
-		src: url("/fonts/PPTelegraf-Regular.woff2") format("woff2"),
-			url("/fonts/PPTelegraf-Regular.woff") format("woff"),
-			url("/fonts/PPTelegraf-Regular.otf") format("opentype");
-		font-weight: normal;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: "Telegraf";
-		src: url("/fonts/PPTelegraf-UltraBold.woff2") format("woff2"),
-			url("/fonts/PPTelegraf-UltraBold.woff") format("woff"),
-			url("/fonts/PPTelegraf-UltraBold.otf") format("opentype");
-		font-weight: bold;
-		font-display: swap;
-	}
-
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-
-	h1 {
-		@apply text-2xl sm:text-3xl 3xl:text-4xl font-bold;
-	}
-
-	h2 {
-		@apply text-xl sm:text-2xl 3xl:text-3xl font-bold;
-	}
-
-	h3 {
-		@apply text-lg sm:text-xl 3xl:text-2xl font-bold;
-	}
-
-	p {
-		@apply text-base/7 sm:text-lg/8 3xl:text-xl/10;
-	}
-
-	span {
-		@apply text-base sm:text-xl 3xl:text-2xl;
-	}
-
-	a {
-		@apply text-base/7 sm:text-lg/8 3xl:text-xl/10 underline text-main-light hover:text-main-red;
-	}
-
-	ul {
-		@apply list-disc block list-inside;
-	}
-
-	ol {
-		@apply list-decimal block list-inside;
-	}
-
-	li {
-		@apply ml-6 mb-1 text-base/7 sm:text-lg/8 3xl:text-xl/10;
-	}
-
-	code {
-		@apply text-xs sm:text-base/7 font-mono bg-main-darker px-2 py-1 rounded-sm;
-	}
-
-	pre {
-		@apply p-5;
-	}
-
-	pre span {
-		@apply text-base/7 font-mono;
-	}
-</style>
 
 <style>
 	html,

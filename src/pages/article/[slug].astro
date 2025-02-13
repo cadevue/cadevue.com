@@ -34,10 +34,10 @@ import BackButton from '../../components/BackButton.astro';
 <BaseLayout title=`${article.data.title} - Article by Addin Munawwar | Cadevue` description={article.data.meta_description}>
     <ContentLayout>
         <div class="w-full flex justify-center">
-            <main class="text-main-light w-full max-w-content flex flex-col gap-8 3xl:max-w-4xl">
+            <main class="text-main-light w-full max-w-content flex flex-col gap-8">
                 <BackButton />
                 <div class="flex flex-col">
-                    <h1 class="text-3xl sm:text-4xl 3xl:text-5xl">{article.data.title}</h1>
+                    <h1 class="text-3xl sm:text-4xl">{article.data.title}</h1>
                     <p class="text-gray-400">
                         <span>Published: {publishDate}</span> &nbsp;|&nbsp; <span>Last Updated: {lastUpdatedDate}</span>
                     </p>
