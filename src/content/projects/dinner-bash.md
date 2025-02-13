@@ -20,7 +20,6 @@ The technologies used in this project are:
 - **CMake** for the build system
 - **GCC** as the compiler
 
-<br>
 
 # About This Project 
 This program is part of my Computer Science Study at Bandung Institute of Technology. The specific course related to this project is IF2110 Algorithm and Data Structure. The full specification of the project is available at the [docs folder](https://github.com/cadevue/dinner-bash-dsa/blob/master/docs/Specification.pdf), although it is available in Indonesian only.
@@ -33,7 +32,6 @@ I also want to credit the people who contributed in the original project:
 - [Arleen Chrysantha Gunardi](https://github.com/arleenchr)
 - [Hobert Anthony Jonatan](https://github.com/HobertJ)
 
-<br>
 
 # Project Description 
 A CLI program implemented in C about a cooking management game! Player can move inside a map and interact with the environment, such as buying ingredients and cooking food. This game has no win condition. This is just simulation that focus on implementation of basic data structure and algorithm, such as:
@@ -47,7 +45,6 @@ A CLI program implemented in C about a cooking management game! Player can move 
 
 > All data structures are implemented from scratch, without using library!
 
-<br>
 
 # How to Run
 ### Prerequisites
@@ -66,11 +63,8 @@ A CLI program implemented in C about a cooking management game! Player can move 
 3. Run `cmake ..` to generate the makefiles
 4. Run `make` to compile the program
 
-<br>
 
 *If the build fails, you might have to specify the Makefiles generator (-G). More about it in [CMake Documentation](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html)*
-
-<br>
 
 # Screenshots 
 Here are some screenshots of the dinner bash!
