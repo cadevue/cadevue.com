@@ -10,7 +10,7 @@ priority: 9
 is_shown: true
 ---
 
-## Description
+# Description
 A puzzle game inspired by Matryoshka dolls. Help each Robushka to get inside their largest parent in this relaxing puzzle game. Hop in and out of different sized Robushkas to finish each level. 
 
 This game was made for the GMTK Game Jam 2024 with the theme 'Built to Scale'.

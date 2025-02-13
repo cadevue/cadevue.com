@@ -14,7 +14,7 @@ Github Repository: <br>
 https://github.com/cadevue/dinner-bash-dsa
 <br>
 
-## Technology Used
+# Technology Used
 The technologies used in this project are:
 - **C** for the implementation
 - **CMake** for the build system
@@ -22,7 +22,7 @@ The technologies used in this project are:
 
 <br>
 
-## About This Project 
+# About This Project 
 This program is part of my Computer Science Study at Bandung Institute of Technology. The specific course related to this project is IF2110 Algorithm and Data Structure. The full specification of the project is available at the [docs folder](https://github.com/cadevue/dinner-bash-dsa/blob/master/docs/Specification.pdf), although it is available in Indonesian only.
 
 This project was originally assigned at the 3rd semester, but I decided to redo the entire project (February 2025) from scratch to improve the code quality and to basically to re-learn C, and of course data structure and algorithm. I could say that this code is much cleaner and more organized than the original one!
@@ -35,7 +35,7 @@ I also want to credit the people who contributed in the original project:
 
 <br>
 
-## Project Description 
+# Project Description 
 A CLI program implemented in C about a cooking management game! Player can move inside a map and interact with the environment, such as buying ingredients and cooking food. This game has no win condition. This is just simulation that focus on implementation of basic data structure and algorithm, such as:
 
 - **Static List** to store game configurations, such as foods and its recipes (loaded in the beginning of the game).
@@ -49,7 +49,7 @@ A CLI program implemented in C about a cooking management game! Player can move 
 
 <br>
 
-## How to Run
+# How to Run
 ### Prerequisites
 - GCC Compiler
 - CMake
@@ -72,7 +72,7 @@ A CLI program implemented in C about a cooking management game! Player can move 
 
 <br>
 
-## Screenshots 
+# Screenshots 
 Here are some screenshots of the dinner bash!
 
 ### Splash Screen
@@ -85,4 +85,4 @@ Here are some screenshots of the dinner bash!
 ![Screenshot - Logs](../../assets/project/dinner-bash/logs.png)
 
 ### Delivery Queue
-![Screenshot - Delivery Queue](https://github.com/cadevue/dinner-bash-dsa/blob/master/docs/delivery.png)
+![Screenshot - Delivery Queue](../../assets/project/dinner-bash/delivery.png)

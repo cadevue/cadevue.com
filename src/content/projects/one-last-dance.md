@@ -9,7 +9,7 @@ meta_description: A game about two astronauts stranded in space inside the aster
 priority: 9
 is_shown: true
 ---
-## Description
+# Description
 Two astronauts stranded in space inside the asteroid belt, facing their final fate. Between hope and despair, they perform their one last dance together, a dance of life and death.
 
 This game was made for Solo Dev Game Jam #4 with the theme 'Two Button Controls'.

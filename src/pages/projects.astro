@@ -21,7 +21,7 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
                 <BackButton light={false} />
             </div>
             <div class="flex items-center gap-2" data-aos="fade-up" data-aos-delay="200" id='portfolio-start'>
-                <h1 class="mt-1">All Projects</h1>
+                <h1 class="mt-1 text-3xl sm:text-4xl 3xl:text-5xl">All Projects</h1>
                 <span class="rotate-45">
                     <ArrowIcon color="#ba3a2c" size="40px"/>
                 </span>
@@ -31,8 +31,6 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
             </p>
 
             <PortfolioGrid projects={sortedProjects} tags={allTags} appearDelay={600} anchorElmt="#portfolio-start" />
-            
-            <!-- <FilteredPortfolioGrid projects={sortedProjects} tags={allTags} appearDelay={800} anchorElmt="#portfolio-start" client:visible /> -->
             </div>
         </ContentLayout>
     </main>
