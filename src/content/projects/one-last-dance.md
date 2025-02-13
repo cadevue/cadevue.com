@@ -1,12 +1,12 @@
 ---
 title: One Last Dance
 poster: {
-    src: https://ik.imagekit.io/moonwr/poster-one-last-dance.png,
+    src: https://ik.imagekit.io/moonwr/poster-one-last-dance.png?,
     alt: One Last Dance Poster
 }
 tags: ["Game Dev", "Unity", "C#"]
 meta_description: A game about two astronauts stranded in space inside the asteroid belt, facing their final fate. For Solo Dev Game Jam \#4. Addin Munawwar (Cadevue).
-priority: 9
+priority: 8
 is_shown: true
 ---
 # Description

@@ -43,19 +43,19 @@ span {
 }
 
 a {
-    @apply text-base/7 sm:text-lg/8 underline text-main-light hover:text-main-red;
+    @apply text-base/7 sm:text-lg/8 underline text-light-red hover:text-main-red;
 }
 
 ul {
-    @apply list-disc block list-inside;
+    @apply list-disc block list-outside;
 }
 
 ol {
-    @apply list-decimal block list-inside;
+    @apply list-decimal block list-outside;
 }
 
 li {
-    @apply ml-6 mb-1 text-base/7 sm:text-lg/8;
+    @apply ml-10 mb-1 text-base/7 sm:text-lg/8;
 }
 
 code {

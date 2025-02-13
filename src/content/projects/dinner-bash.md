@@ -1,7 +1,7 @@
 ---
 title: Dinner Bash
 poster: {
-    src: https://ik.imagekit.io/moonwr/poster-dinner-bash.png?updatedAt=1739448445546,
+    src: https://ik.imagekit.io/moonwr/poster-dinner-bash.png?updatedAt=1739448445546&,
     alt: Dinner Bash Poster
 }
 tags: ["CS202", "Data Structure", "C", "CMake", "Algorithm"]
@@ -22,7 +22,7 @@ The technologies used in this project are:
 
 
 # About This Project 
-This program is part of my Computer Science Study at Bandung Institute of Technology. The specific course related to this project is IF2110 Algorithm and Data Structure. The full specification of the project is available at the [docs folder](https://github.com/cadevue/dinner-bash-dsa/blob/master/docs/Specification.pdf), although it is available in Indonesian only.
+This program is part of my Computer Science Study at Bandung Institute of Technology. The specific course related to this project is IF2110 Algorithm and Data Structure. The full specification of the project is available in [this drive](https://drive.google.com/file/d/1gQeH-QhoDWDdYWXeJJNCYY1YflFZMYGT/view?usp=sharing), although it is available in Indonesian only.
 
 This project was originally assigned at the 3rd semester, but I decided to redo the entire project (February 2025) from scratch to improve the code quality and to basically to re-learn C, and of course data structure and algorithm. I could say that this code is much cleaner and more organized than the original one!
 
@@ -53,18 +53,18 @@ A CLI program implemented in C about a cooking management game! Player can move 
 - Makefiles
 
 ### Windows
-1. Navigate to the project directory
-2. Run `.\scripts\build.bat` to compile the program.
-3. Run `.\scripts\run.bat` to run the program.
+1. &nbsp;Navigate to the project directory
+2. &nbsp;Run `.\scripts\build.bat` to compile the program.
+3. &nbsp;Run `.\scripts\run.bat` to run the program.
 
 ### Other Operating System (Manual Build)
-1. Navigate to the project directory
-2. Make build directory: `mkdir build`, then navigate to build directory `cd build`
-3. Run `cmake ..` to generate the makefiles
-4. Run `make` to compile the program
+1. &nbsp;Navigate to the project directory
+2. &nbsp;Make build directory: `mkdir build`, then navigate to build directory `cd build`
+3. &nbsp;Run `cmake ..` to generate the makefiles
+4. &nbsp;Run `make` to compile the program
 
 
-*If the build fails, you might have to specify the Makefiles generator (-G). More about it in [CMake Documentation](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html)*
+*\* If the build fails, you might have to specify the Makefiles generator (-G). More about it in [CMake Documentation](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html)*
 
 # Screenshots 
 Here are some screenshots of the dinner bash!
