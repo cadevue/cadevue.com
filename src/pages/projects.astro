@@ -4,7 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ContentLayout from "../layouts/ContentLayout.astro";
 import BackButton from "../components/BackButton.astro";
 import ArrowIcon from "../components/ArrowIcon.astro";
-import FilteredPortfolioGrid from "../components/FilteredPortfolioGrid.svelte";
+import PortfolioGrid from "../components/PortfolioGrid.svelte";
 
 const allProjects = await getCollection("projects");
 const sortedProjects = allProjects.sort((a, b) => {
@@ -29,7 +29,10 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
             <p class="text-main-black mb-4" data-aos="fade-up" data-aos-delay="400">
                 I'm still compiling all the projects I've worked on, but these are some!
             </p>
-            <FilteredPortfolioGrid projects={sortedProjects} tags={allTags} appearDelay={800} anchorElmt="#portfolio-start" client:visible />
+
+            <PortfolioGrid projects={sortedProjects} tags={allTags} appearDelay={600} anchorElmt="#portfolio-start" />
+            
+            <!-- <FilteredPortfolioGrid projects={sortedProjects} tags={allTags} appearDelay={800} anchorElmt="#portfolio-start" client:visible /> -->
             </div>
         </ContentLayout>
     </main>

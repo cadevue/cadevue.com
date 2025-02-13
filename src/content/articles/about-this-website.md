@@ -3,7 +3,7 @@ title: About this Website
 meta_description: It’s initiated during the winter holiday, just like how any of hobby projects started. I was in my 4th year of college, waiting for my last semester to come, while daunted by the fact that I will have to enter the CS job market after all of this is over. But it’s not just about entering the job market. No, it’s about entering the CS job market in 2025. Yes, entering the CS job market in 2025, you heard it right. You know how cooked it is. Even the chance of … is much higher than a computer science graduate getting a job.
 date_published: 2025-02-10
 date_last_updated: 2025-02-10
-is_published: true
+is_published: false
 ---
 
 It's initiated during the winter holiday, just like how any of hobby projects started. I was in my 4th year of college, waiting for my last semester to come, while daunted by the fact that I will have to enter the CS job market after all of this is over. But it's not just about entering the job market. No, it's about entering the **CS job market in 2025**. Yes, entering the CS job market in 2025, you heard it right. You know how cooked it is.

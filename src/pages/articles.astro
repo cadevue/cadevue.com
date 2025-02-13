@@ -25,6 +25,14 @@ const sortedArticles = allArticles.sort((a, b) =>
                 </span>
             </div>
             <div class="grid grid-cols-1 gap-10 mt-10">
+                {
+                    sortedArticles.length === 0 && (
+                        <p data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#portfolio-start">
+                            No articles yet. Check back soon!
+                        </p>
+                    )
+                }
+
                 {sortedArticles.map((article, idx) => (
                     <ArticlePreview 
                         slug={article.slug} title={article.data.title} 
