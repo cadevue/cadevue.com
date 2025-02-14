@@ -14,12 +14,6 @@ Github Repository: <br>
 https://github.com/cadevue/galaxio-entelect-challenge
 <br>
 
-# Technology Used
-The technologies used in this project are:
-- **Java JRE 11** for the bot implementation
-- **Dotnet Core 3.1** for the game engine
-- **Microsoft SignalR** for server-client communication
-
 # About This Project 
 This bot is made as part of my Computer Science Study at Bandung Institute of Technology. The specific course related to this project is IF2211 Algorithm Strategy. The full specification of the project is available in [this drive](https://drive.google.com/file/d/1PSvUfA-midfWCeD8EBhRFqpBACDkW7Hw/view?usp=sharing), although it is available only in Indonesian.
 
@@ -46,6 +40,12 @@ A bot made for the Galaxio game from The [Entelect Challenge 2021](https://githu
 8. &nbsp;**DetonateSupernova**: After the supernova is fired, detonate the supernova it is within the radius of the target, and is far enough from the player.
 
 Every state will have their own `State Score` based on the current game state (enemy positions, obstacle, current size, etc.). The state with the highest score will be chosen. This of course follows the greedy approach, where it picks the best solution based on the current situation only.
+
+# Technology Used
+The technologies used in this project are:
+- **Java JRE 11** for the bot implementation
+- **Dotnet Core 3.1** for the game engine
+- **Microsoft SignalR** for server-client communication
 
 # How to Run
 Information about the engine and visualizer can be found in the [Galaxio-2021 Official Repo](https://github.com/EntelectChallenge/2021-Galaxio)!
