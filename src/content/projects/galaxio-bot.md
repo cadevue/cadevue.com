@@ -1,7 +1,7 @@
 ---
 title: Galaxio Bot (EC2021)
 poster: {
-    src: https://ik.imagekit.io/moonwr/galaxio-bot.png?updatedAt=1739464846184&,
+    src: https://ik.imagekit.io/moonwr/galaxio-bot.png?updatedAt=1739506601010&,
     alt: Galaxio Entelect Challenge Poster
 }
 tags: ["CS202", "Algorithm", "Java", "Maven"]
