@@ -9,9 +9,9 @@ is_published: false
 <img 
     src="https://ik.imagekit.io/moonwr/cs202.png"
     srcset="
-        https://ik.imagekit.io/moonwr/cs202.png?tr=f-avif,w-480 480w,
-        https://ik.imagekit.io/moonwr/cs202.png?tr=f-avif,w-768 768w,
-        https://ik.imagekit.io/moonwr/cs202.png?tr=f-avif,w-1200 1200w,
+        https://ik.imagekit.io/moonwr/cs202.png?tr=f-webp,w-480 480w,
+        https://ik.imagekit.io/moonwr/cs202.png?tr=f-webp,w-768 768w,
+        https://ik.imagekit.io/moonwr/cs202.png?tr=f-webp,w-1200 1200w,
     "
     sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1200px"
     alt="CS-202 Banner"

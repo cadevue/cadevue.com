@@ -4,9 +4,9 @@ poster: {
     src: https://ik.imagekit.io/moonwr/poster-robushka.png?,
     alt: Robushka Poster
 }
-tags: ["Game Dev", "Unity", "C#"]
+tags: ["Game Dev", "In Browser", "Unity", "C#"]
 meta_description: A puzzle game inspired by Matryoshka dolls. Help each Robushka to get inside their largest parent in this relaxing puzzle game. Hop in and out of different sized Robushkas to finish each level. Addin Munawwar (Cadevue).
-priority: 9
+priority: 9.1
 is_shown: true
 ---
 

@@ -12,15 +12,15 @@
     >
         <img src={img} 
             srcset={`
-                ${img}tr=f-avif,w-480 480w,
-                ${img}tr=f-avif,w-768 768w,
+                ${img}tr=f-webp,w-480 480w,
+                ${img}tr=f-webp,w-768 768w,
             `}
             sizes="(max-width: 480px) 480px, 768px"
             alt={alt} class="w-full aspect-video rounded-lg"
         />
     </a>
     <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light p-5 flex flex-col justify-end 
-        bg-gradient-to-t from-main-black to-transparent rounded-lg pointer-events-none gap-0.5 sm:gap-1
+        bg-gradient-to-t from-neutral-900 to-transparent rounded-lg pointer-events-none gap-0.5 sm:gap-1
     ">
         <h2 class="line-clamp-1">{title}</h2>
         <div class="flex gap-1 pointer-events-auto flex-wrap">

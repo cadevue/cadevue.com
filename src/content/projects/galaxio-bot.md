@@ -6,7 +6,7 @@ poster: {
 }
 tags: ["CS202", "Algorithm", "Java", "Maven"]
 meta_description: A CLI program implemented in C about a cooking management game! Player can move inside a map and interact with the environment, such as buying ingredients and cooking food. This game has no win condition. This is just simulation that focus on implementation of basic data structure and algorithm. Addin Munawwar (Cadevue).
-priority: 9.2
+priority: 9.5
 is_shown: true
 ---
 

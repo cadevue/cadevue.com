@@ -64,9 +64,9 @@ What about the image? Image is probably the largest file loaded in the website r
 ```html
 <img src={src} 
     srcset={`
-        ${src}?tr=f-avif,w-480 480w,
-        ${src}?tr=f-avif,w-768 768w,
-        ${src}?tr=f-avif,w-1200 1200w,
+        ${src}?tr=f-webp,w-480 480w,
+        ${src}?tr=f-webp,w-768 768w,
+        ${src}?tr=f-webp,w-1200 1200w,
     `}
     sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1200px"
     alt={alt} class="w-full h-auto aspect-video rounded-xl" 

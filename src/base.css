@@ -66,6 +66,10 @@ pre {
     @apply p-5;
 }
 
+pre code {
+    @apply bg-transparent;
+}
+
 pre span {
     @apply text-base/7 font-mono;
 }
