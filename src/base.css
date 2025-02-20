@@ -67,9 +67,9 @@ pre {
 }
 
 pre code {
-    @apply bg-transparent;
+    @apply text-xs sm:text-base/7 font-mono bg-transparent px-2 py-1 rounded-sm
 }
 
 pre span {
-    @apply text-base/7 font-mono;
+    @apply text-xs sm:text-base/7 font-mono
 }

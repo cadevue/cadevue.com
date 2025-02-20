@@ -27,3 +27,48 @@ This game was the **2nd place winner** of **Student Category** in the **Gameseed
 
 ### Avoid the Dogs
 ![Pawdemic - Avoid the Dogs](../../assets/project/pawdemic/3.gif)
+
+<br>
+
+# Credits
+This game is made by 9 people, including me. The team members are:
+
+<div class="flex flex-col justify-between sm:flex-row">
+
+<div class="w-full sm:w-2/5">
+
+### Programmers
+- Addin Munawwar (Me)  
+- Nathan Tenka  
+- Naufal Syifa Firdaus  
+- Edia Zaki Naufal Ilman  
+
+<br>
+
+### Music and Sound
+- Nila Eleora Putri Sianturi  
+
+</div>
+
+<div class="w-px bg-slate-400 hidden sm:block"></div>
+
+<div class="w-full sm:w-2/5">
+
+### 3D Environment Artist
+- Yaqufa Nurul Izza  
+
+<br>
+
+### 2D Artist and Animator
+- Raudya Tuzzahra Zulfikarini  
+- Renata Irfi Mayditia  
+- Anisa Zhafira Nasution  
+
+<br>
+
+### UI/UX and VFX
+- Nila Eleora Putri Sianturi  
+
+</div>
+
+</div>
