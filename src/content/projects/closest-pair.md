@@ -11,7 +11,7 @@ is_shown: true
 ---
 
 Github Repository: <br>
-https://github.com/cadevue/closest-pair
+https://github.com/cadevue/closest-pair-solver
 <br>
 
 # Try Now!
@@ -30,7 +30,7 @@ My goal for this project is also to learn about deployment, especially from the 
 The original project can be found in this repository, which is just the algorithm implementation in Golang, without the frontend or server implementation: <br>
 https://github.com/cadevue/ClosestPairSolver
 
-*\* Notice that this differs from the repo for the current bot. Repo of the current bot can be found on top of this article*
+*\* Notice that this differs from the repo of the current app. Repo of the current app can be found on top of this article*
 
 I also want to credit the people who contributed in the original project:
 - [Fakih Anugerah Pratama](https://github.com/fakihap/)
