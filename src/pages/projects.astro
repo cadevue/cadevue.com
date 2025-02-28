@@ -7,9 +7,9 @@ import ArrowIcon from "../components/ArrowIcon.astro";
 import PortfolioGrid from "../components/PortfolioGrid.svelte";
 
 const allProjects = await getCollection("projects");
-const sortedProjects = allProjects.sort((a, b) => {
+const projects = allProjects.sort((a, b) => {
     return b.data.priority - a.data.priority;
-});
+}).filter((project) => project.data.is_shown);
 
 const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))];
 ---
@@ -30,7 +30,7 @@ const allTags = [...new Set(allProjects.flatMap((project) => project.data.tags))
                 I'm still compiling all the projects I've worked on, but these are some!
             </p>
 
-            <PortfolioGrid projects={sortedProjects} tags={allTags} appearDelay={600} anchorElmt="#portfolio-start" />
+            <PortfolioGrid projects={projects} tags={allTags} appearDelay={600} anchorElmt="#portfolio-start" />
             </div>
         </ContentLayout>
     </main>

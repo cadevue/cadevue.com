@@ -1,7 +1,7 @@
 ---
 title: Closest Pair Solver
 poster: {
-    src: https://ik.imagekit.io/moonwr/closest-pair.png?updatedAt=1740064386887&,
+    src: https://ik.imagekit.io/moonwr/closest-pair.png?updatedAt=1740740910110&,
     alt: Closest Pair Solver Poster
 }
 tags: ["CS202", "In Browser", "Golang", "Typescript", "Algorithm", "Three.js", "Docker", "Cloudflare", "AWS EC2", "Web", "Vite", "TailwindCSS", "Websocket", "CI/CD", "Github Actions"]
