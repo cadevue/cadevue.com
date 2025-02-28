@@ -34,16 +34,16 @@ https://www.soundsnap.com/rc_remote_controlled_car_engine_jammed_close_very_shor
 - Dino Care Font by Khurasan
 https://www.cufonfonts.com/font/dino-care#image-generator
 
-# In Game Screenshots
+# Game Screenshots
 Here are some screenshots taken from the game.
 
-![Robushka Screenshot 1](../../assets/project/robushka/1.png)
+![Screenshot of Robushka #1](../../assets/project/robushka/1.png)
 <br>
 
-![Robushka Screenshot 2](../../assets/project/robushka/2.png)
+![Screenshot of Robushka #2](../../assets/project/robushka/2.png)
 <br>
 
-![Robushka Screenshot 3](../../assets/project/robushka/3.png)
+![Screenshot of Robushka #3](../../assets/project/robushka/3.png)
 
 <br>
 

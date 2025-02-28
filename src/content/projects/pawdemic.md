@@ -20,13 +20,13 @@ This game was the **2nd place winner** of **Student Category** in the **Gameseed
 
 # The Gameplay
 ### Build a Cat Army
-![Pawdemic - Build a Cat Army](../../assets/project/pawdemic/1.gif)
+![Pawdemic Gameplay - Build a Cat Army](../../assets/project/pawdemic/1.gif)
 
 ### Spread Feline Domination
-![Pawdemic - Spread Feline Domination](../../assets/project/pawdemic/2.gif)
+![Pawdemic Gameplay - Spread Feline Domination](../../assets/project/pawdemic/2.gif)
 
 ### Avoid the Dogs
-![Pawdemic - Avoid the Dogs](../../assets/project/pawdemic/3.gif)
+![Pawdemic Gameplay - Avoid the Dogs](../../assets/project/pawdemic/3.gif)
 
 <br>
 

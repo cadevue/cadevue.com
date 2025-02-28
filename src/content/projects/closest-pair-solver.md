@@ -18,7 +18,7 @@ https://github.com/cadevue/closest-pair-solver
 This application can be tried out immediately! The web application can be accessed in this link: <br>
 https://closest-pair-frontend.pages.dev/
 
-# About This Project 
+<!-- # About This Project 
 This project is made as part of my Computer Science Study at Bandung Institute of Technology. The specific course related to this project is IF2211 Algorithm Strategy.
 
 This project was originally assigned at the 4th semester, but I decided to redo the entire project (February 2025) from learning purposes. 
@@ -33,11 +33,13 @@ https://github.com/cadevue/ClosestPairSolver
 *\* Notice that this differs from the repo of the current app. Repo of the current app can be found on top of this article*
 
 I also want to credit the people who contributed in the original project:
-- [Fakih Anugerah Pratama](https://github.com/fakihap/)
+- [Fakih Anugerah Pratama](https://github.com/fakihap/) -->
 
 
 # Project Description 
-A web application that solve the closest pair problem using 2 kind of algorithm — Brute Force and Divide and Conquer. The frontend is built using Typescript and Three.js, while the backend is built using Golang. The program is deployed using Cloudflare Pages (frontend) and Docker-AWS EC2 (backend). The communication between the frontend and backend is done using websocket.
+A web application that solve the closest pair problem using 2 kind of algorithm — Brute Force and Divide and Conquer. The application shows the comparison between the two algorithms in terms of execution time and number of Euclidean operations needed to solve the problem.
+
+The frontend is built using Typescript and Three.js, while the backend is built using Golang. The program is deployed using Cloudflare Pages (frontend) and Docker-AWS EC2 (backend). The communication between the frontend and backend is done using websocket.
 
 Here is the specification of the request and response for the websocket communication:
 ```go
@@ -60,21 +62,21 @@ type SolveCPResponse struct {
 https://github.com/cadevue/closest-pair-frontend/tree/master
 
 The technologies used for the frontend are:
-- **Typescript** for the web scripting language
+- **Typescript** as the language
 - **Three.js** for the 3D rendering of the points
-- **Vite** for the frontend bundler
-- **TailwindCSS** for the styling
-- **Websocket** for the communication with the backend
+- **Vite** for frontend bundling
+- **TailwindCSS** for styling
+- **JS Websocket** for the communication with the backend
 - **Cloudflare Pages** for the deployment
 
 # Backend
 https://github.com/cadevue/closest-pair-backend/tree/master
 
 The technologies used for the backend are:
-- **Golang** for the backend language
-- **Docker** for the containerization
+- **Golang** as the language
+- **Docker** for containerization
 - **AWS EC2** for the deployment
-- **Websocket** for the communication with the frontend
+- **Gorillaz Websocket** for communication with the frontend
 - **Github Actions** for the CI/CD pipeline
 
 # Deployment
@@ -85,13 +87,13 @@ https://closest-pair-frontend.pages.dev/
 Here are some screenshots of the closest pair solver web application.
 
 ### Application Idle
-![Screenshot - Application Idle](../../assets/project/closest-pair/idle.png)
+![Closest Pair Solver Screenshot - Application Idle](../../assets/project/closest-pair/idle.png)
 
 ### Solving the Closest Pair
-![Screenshot - Solving the Closest Pair](../../assets/project/closest-pair/solving.png)
+![Closest Pair Solver Screenshot - Solving the Closest Pair](../../assets/project/closest-pair/solving.png)
 
 ### Result Visualization and Logs
-![Screenshot - Result Visualization and Logs](../../assets/project/closest-pair/result.png)
+![Closest Pair Solver Screenshot - Result Visualization and Logs](../../assets/project/closest-pair/result.png)
 
 ### Connection Close when Idle
-![Screenshot - Connection Close when Idle](../../assets/project/closest-pair/closed.png)
+![Closest Pair Solver Screenshot - Connection Close when Idle](../../assets/project/closest-pair/closed.png)

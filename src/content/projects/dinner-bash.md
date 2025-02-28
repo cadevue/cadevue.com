@@ -4,7 +4,7 @@ poster: {
     src: https://ik.imagekit.io/moonwr/poster-dinner-bash.png?updatedAt=1739448445546&,
     alt: Dinner Bash Poster
 }
-tags: ["CS202", "Data Structure", "C", "CMake", "Algorithm"]
+tags: ["CS202", "C", "Data Structure", "CMake", "Algorithm"]
 meta_description: A CLI program implemented in C about a cooking management game! Player can move inside a map and interact with the environment, such as buying ingredients and cooking food. This game has no win condition. This is just simulation that focus on implementation of basic data structure and algorithm. Addin Munawwar (Cadevue).
 priority: 7
 is_shown: true
@@ -14,8 +14,7 @@ Github Repository: <br>
 https://github.com/cadevue/dinner-bash-dsa
 <br>
 
-
-# About This Project 
+<!-- # About This Project 
 This program is part of my Computer Science Study at Bandung Institute of Technology. The specific course related to this project is IF2110 Algorithm and Data Structure. The full specification of the project is available in [this drive](https://drive.google.com/file/d/1gQeH-QhoDWDdYWXeJJNCYY1YflFZMYGT/view?usp=sharing), although it is available in Indonesian only.
 
 This project was originally assigned at the 3rd semester, but I decided to redo the entire project (February 2025) from scratch to improve the code quality and to basically to re-learn C, and of course data structure and algorithm. I could say that this code is much cleaner and more organized than the original one!
@@ -24,7 +23,7 @@ I also want to credit the people who contributed in the original project:
 - [Brian Kheng](https://github.com/briankheng)
 - [Jericho Russel Sebastian](https://github.com/JerichoFletcher)
 - [Arleen Chrysantha Gunardi](https://github.com/arleenchr)
-- [Hobert Anthony Jonatan](https://github.com/HobertJ)
+- [Hobert Anthony Jonatan](https://github.com/HobertJ) -->
 
 
 # Project Description 
@@ -70,13 +69,13 @@ The technologies used in this project are:
 Here are some screenshots of the dinner bash!
 
 ### Splash Screen
-![Screenshot - Splash Screen](../../assets/project/dinner-bash/splash-screen.png)
+![Screenshot of Dinner Bash - Splash Screen](../../assets/project/dinner-bash/splash-screen.png)
 
 ### Main Gameplay
-![Screenshot - Main Gameplay](../../assets/project/dinner-bash/main-gameplay.png)
+![Screenshot of Dinner Bash - Main Gameplay](../../assets/project/dinner-bash/main-gameplay.png)
 
 ### Logs in Screen
-![Screenshot - Logs](../../assets/project/dinner-bash/logs.png)
+![Screenshot of Dinner Bash - Logs](../../assets/project/dinner-bash/logs.png)
 
 ### Delivery Queue
-![Screenshot - Delivery Queue](../../assets/project/dinner-bash/delivery.png)
+![Screenshot of Dinner Bash - Delivery Queue](../../assets/project/dinner-bash/delivery.png)
