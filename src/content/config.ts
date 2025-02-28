@@ -6,8 +6,10 @@ const projectCollection = defineCollection({
         poster: z.object ({
             src: z.string(),
             alt: z.string(),
-            credit: z.optional(z.string()),
-            credit_url: z.optional(z.string()),
+            credit: z.optional(z.object({
+                label: z.string(),
+                url: z.optional(z.string()),
+            }))
         }),
         tags: z.array(z.string()),
         meta_description: z.string(),

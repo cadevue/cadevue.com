@@ -3,9 +3,10 @@ title: Galaxio Bot (EC2021)
 poster: {
     src: https://ik.imagekit.io/moonwr/galaxio-bot.png?updatedAt=1739506601010&,
     alt: Galaxio Entelect Challenge Poster,
-    credit: "Entelect Challenge Livestream",
-    credit_url: "https://www.youtube.com/watch?v=ICoPyQA2Fhc"
-
+    credit: {
+        label: "Entelect Challenge Livestream",
+        url: "https://www.youtube.com/watch?v=ICoPyQA2Fhc"
+    }
 }
 tags: ["CS202", "Algorithm", "Java", "Maven"]
 meta_description: A CLI program implemented in C about a cooking management game! Player can move inside a map and interact with the environment, such as buying ingredients and cooking food. This game has no win condition. This is just simulation that focus on implementation of basic data structure and algorithm. Addin Munawwar (Cadevue).

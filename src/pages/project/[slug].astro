@@ -43,12 +43,12 @@ const { src, alt } = project.data.poster;
                             project.data.poster.credit &&
                             <p>
                                 Poster from
-                                { project.data.poster.credit_url ?
-                                    <a href={project.data.poster.credit_url} target="_blank" rel="noopener">
-                                        {project.data.poster.credit}
+                                { project.data.poster.credit.url ?
+                                    <a href={project.data.poster.credit.url} target="_blank" rel="noopener">
+                                        {project.data.poster.credit.label}
                                     </a>
                                     :
-                                    `${project.data.poster.credit}`
+                                    `${project.data.poster.credit.label}`
                                 }
                             </p>
                         }
