@@ -1,10 +1,10 @@
 ---
 title: Treasure Hunt
 poster: {
-    src: https://ik.imagekit.io/moonwr/treasure-hunt.png?updatedAt=1740734375908&,
+    src: https://ik.imagekit.io/moonwr/treasure-hunt.png?,
     alt: Treasure Hunt Poster
 }
-tags: ["CS202", "In Browser", "React", "Typescript", "Algorithm", "Vercel", "Web", "Vite", "TailwindCSS"]
+tags: ["CompSci", "In Browser", "React", "Typescript", "Algorithm", "Vercel", "Web", "Vite", "TailwindCSS"]
 meta_description: A web application that solves treasure hunt problem
 priority: 7.5
 is_shown: true

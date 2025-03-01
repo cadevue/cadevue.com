@@ -34,7 +34,7 @@
         if (activeFilters.tags.length === 0) return false;
 
         const tags = project.data.tags.map(tag => labelToTagValue(tag));
-        return activeFilters.tags.every(tag => tags.includes(tag));
+        return activeFilters.tags.some(tag => tags.includes(tag));
     }
 </script>
 

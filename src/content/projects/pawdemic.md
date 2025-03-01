@@ -4,7 +4,7 @@ poster: {
     src: https://ik.imagekit.io/moonwr/poster-pawdemic.png?,
     alt: Pawdemic Poster
 }
-tags: ["Game Dev", "Unity", "C#"]
+tags: ["Game Dev", "Unity", "C#", "Desktop"]
 meta_description: A game about a cat god invading city with its cat army, spreading feline domination and love. For Gameseed 2024. Addin Munawwar (Cadevue).
 priority: 10
 is_shown: true
@@ -17,6 +17,15 @@ This game was the **2nd place winner** of **Student Category** in the **Gameseed
 
 <a href="https://noart278.itch.io/pawdemic" target="_blank" rel="noopener noreferrer">To Itch.io Page</a>
 <br><br>
+
+# Playthrough
+<iframe
+    src="https://www.youtube.com/embed/b_VoVDMI1GA" 
+    frameborder="1"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    class="w-full mb-4"
+allowfullscreen>
+</iframe>
 
 # The Gameplay
 ### Build a Cat Army

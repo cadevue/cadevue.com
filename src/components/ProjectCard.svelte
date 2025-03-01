@@ -4,13 +4,13 @@
     const { title, tags, img, alt, slug, aos } = $props();
 </script>
 
-<div class="relative w-full aspect-video rounded-lg"
+<div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden"
     data-aos={aos?.type} data-aos-anchor={aos?.anchor} data-aos-delay={aos?.delay}
 >
-    <a class="absolute bottom-0 w-full bg-main-gray flex items-end no-underline" href={`/project/${slug}`}
+    <a class="absolute bottom-0 w-full flex items-end no-underline" href={`/project/${slug}`}
         data-astro-prefetch
     >
-        <img src={img} 
+        <img src={img}
             srcset={`
                 ${img}tr=f-webp,w-480 480w,
                 ${img}tr=f-webp,w-768 768w,
@@ -19,7 +19,7 @@
             alt={alt} class="w-full aspect-video rounded-lg"
         />
     </a>
-    <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light p-5 flex flex-col justify-end 
+    <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light p-5 sm:p-6 flex flex-col justify-end 
         bg-gradient-to-t from-neutral-900 to-transparent rounded-lg pointer-events-none gap-0.5 sm:gap-1
     ">
         <h2 class="line-clamp-1">{title}</h2>

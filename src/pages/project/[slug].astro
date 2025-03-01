@@ -67,3 +67,19 @@ const { src, alt } = project.data.poster;
         </div>
     </ContentLayout>
 </BaseLayout>
+
+<script>
+    const iframes = document.querySelectorAll('iframe');
+    const aspectRatio = 16 / 9;
+    iframes.forEach((iframe) => {
+        iframe.style.height = `${iframe.offsetWidth / aspectRatio}px`;
+    });
+
+    function handleResize() {
+        iframes.forEach((iframe) => {
+            iframe.style.height = `${iframe.offsetWidth / aspectRatio}px`;
+        });
+    }
+
+    window.addEventListener('resize', handleResize);
+</script>
