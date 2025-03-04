@@ -18,7 +18,7 @@ Todongta Saga is a game inspired by the rich traditions of Batak culture. It rev
 
 # Demo Playthrough
 <iframe
-    src="https://www.youtube.com/embed/MwAxGZBnGnU" 
+    src="https://www.youtube.com/embed/HsOfg5oaT8Q" 
     frameborder="1"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
     class="w-full py-2"
