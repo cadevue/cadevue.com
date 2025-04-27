@@ -18,13 +18,13 @@ A web-based application that uses WebGL to draw and manipulate geometric models 
 
 # How to Run 🚀
 This repository is private, so you can't run it locally for now. Here's the demo we made on the project though (Indonesian Only):
-1. **Component Editor**<br> https://www.loom.com/share/0baffab481934da09023bd2b82ea9524
-2. **Scene**<br> https://www.loom.com/share/2aff15bba6f448d88f9667ffc37833f8
-3. **Camera**<br> https://www.loom.com/share/61575364a5194dadbec0cd617310d34f
-4. **Materials and Animation (Me)**<br> https://www.loom.com/share/f08ae8e3bde04085bdf92de0acc2844f
-5. **Light**<br> https://www.loom.com/share/5e83ee54aa9d483ea9227f15d1114a67
-6. **Character Controller**<br> https://www.loom.com/share/6a7fe2eabe174a48a7f4d720ceacfc9a
-7. **Parallax Map and Tweening (Me)**<br> https://www.loom.com/share/4cf99099fa004ff6b78bf50fcc08561a
+1. [Component Editor](https://www.loom.com/share/0baffab481934da09023bd2b82ea9524)
+2. [Scene](https://www.loom.com/share/2aff15bba6f448d88f9667ffc37833f8)
+3. [Camera](https://www.loom.com/share/61575364a5194dadbec0cd617310d34f)
+4. [Materials and Animation (Me)](https://www.loom.com/share/f08ae8e3bde04085bdf92de0acc2844f)
+5. [Light](https://www.loom.com/share/5e83ee54aa9d483ea9227f15d1114a67)
+6. [Character Controller](https://www.loom.com/share/6a7fe2eabe174a48a7f4d720ceacfc9a)
+7. [Parallax Map and Tweening (Me)](https://www.loom.com/share/4cf99099fa004ff6b78bf50fcc08561a)
 
 # Features ✨
 ## Component Editor
