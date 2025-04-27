@@ -4,7 +4,7 @@ poster: {
     src: https://ik.imagekit.io/moonwr/webgl-2d-editor.png?,
     alt: WebGL 2D Editor Poster,
 }
-tags: ["WebGL", "Computer Graphics", "Web", "Typescript", "HTML", "CSS", "Vite"]
+tags: ["WebGL", "Comp. Graphics", "Web", "Typescript", "HTML", "CSS", "Vite"]
 meta_description: A web-based application to draw and manipulate 2D geometry interactively. Addin Munawwar (Cadevue).
 priority: 8.8
 is_shown: true

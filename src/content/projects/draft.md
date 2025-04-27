@@ -10,7 +10,7 @@ poster: {
 }
 tags: ["Distributed System", "Golang", "CompSci", "Algorithm", "Web", "Vite", "Typescript"]
 meta_description: A simple simulation of the Raft Consensus Protocol implemented in Golang. Addin Munawwar (Cadevue).
-priority: 8.2
+priority: 8.3
 is_shown: true
 ---
 

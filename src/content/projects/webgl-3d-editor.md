@@ -4,7 +4,7 @@ poster: {
     src: https://ik.imagekit.io/moonwr/webgl-3d-editor.png?updatedAt=1745742633310&,
     alt: WebGL 3D Editor Poster,
 }
-tags: ["WebGL", "Computer Graphics", "Web", "Typescript", "HTML", "CSS", "Vite", "React", "DaisyUI"]
+tags: ["WebGL", "Comp. Graphics", "Web", "Typescript", "HTML", "CSS", "Vite", "React", "DaisyUI"]
 meta_description: A web-based application to create a 3D scene and play with it. Addin Munawwar (Cadevue).
 priority: 9.8
 is_shown: true

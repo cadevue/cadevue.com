@@ -10,7 +10,7 @@ const projects = allProjects.sort((a, b) => {
 }).filter((project) => project.data.is_shown).slice(0, 10);
 
 const portofolioGridDelay = 600
-const allProjectsLinkDelay = portofolioGridDelay + 200 * allProjects.length
+const allProjectsLinkDelay = portofolioGridDelay + 200 * projects.length
 ---
 
 <section class="w-full bg-main-light py-20 sm:py-32 relative text-main-black">
