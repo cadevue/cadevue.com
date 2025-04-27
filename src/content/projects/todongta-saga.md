@@ -6,7 +6,7 @@ poster: {
 }
 tags: ["Game Dev", "Unity", "C#", "Yarn Spinner", "NaughtyAttributes", "Mobile"]
 meta_description: A game about a cat god invading city with its cat army, spreading feline domination and love. For Gameseed 2024. Addin Munawwar (Cadevue).
-priority: 9.8
+priority: 9.7
 is_shown: true
 ---
 
