@@ -4,7 +4,7 @@ poster: {
     src: https://ik.imagekit.io/moonwr/webgl-3d-editor.png?updatedAt=1745742633310&,
     alt: WebGL 3D Editor Poster,
 }
-tags: ["WebGL", "Computer Graphics", "Typescript", "HTML", "CSS", "Web", "Vite", "React", "DaisyUI"]
+tags: ["WebGL", "Computer Graphics", "Web", "Typescript", "HTML", "CSS", "Vite", "React", "DaisyUI"]
 meta_description: A web-based application to draw and manipulate 2D geometry interactively. Addin Munawwar (Cadevue).
 priority: 9.8
 is_shown: true
