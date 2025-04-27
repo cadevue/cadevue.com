@@ -6,7 +6,7 @@ poster: {
 }
 tags: ["Game Dev", "In Browser", "Unity", "C#"]
 meta_description: A game about two astronauts stranded in space inside the asteroid belt, facing their final fate. For Solo Dev Game Jam \#4. Addin Munawwar (Cadevue).
-priority: 8.1
+priority: 7.9
 is_shown: true
 ---
 # Description
