@@ -5,8 +5,8 @@ poster: {
     alt: Treasure Hunt Poster
 }
 tags: ["CompSci", "In Browser", "React", "Typescript", "Algorithm", "Vercel", "Web", "Vite", "TailwindCSS"]
-meta_description: A web application that solves treasure hunt problem
-priority: 7.5
+meta_description: A web application that solves treasure hunt problem. Addin Munawwar (Cadevue).
+priority: 7.2
 is_shown: true
 ---
 
