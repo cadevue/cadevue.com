@@ -1,5 +1,5 @@
 ---
-title: WebGL 3D Editor (WebGL)
+title: WebGL 3D Editor
 poster: {
     src: https://ik.imagekit.io/moonwr/webgl-3d-editor.png?updatedAt=1745742633310&,
     alt: WebGL 3D Editor Poster,

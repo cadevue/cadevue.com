@@ -1,5 +1,5 @@
 ---
-title: WebGL 2D Editor (WebGL)
+title: WebGL 2D Editor
 poster: {
     src: https://ik.imagekit.io/moonwr/webgl-2d-editor.png?,
     alt: WebGL 2D Editor Poster,
