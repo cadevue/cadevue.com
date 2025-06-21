@@ -7,10 +7,10 @@ import PortfolioGrid from "../components/PortfolioGrid.svelte";
 const allProjects = await getCollection("projects");
 const projects = allProjects.sort((a, b) => {
     return b.data.priority - a.data.priority;
-}).filter((project) => project.data.is_shown);
+}).filter((project) => project.data.is_shown).slice(0, 10);
 
 const portofolioGridDelay = 600
-const allProjectsLinkDelay = portofolioGridDelay + 200 * allProjects.length
+const allProjectsLinkDelay = portofolioGridDelay + 200 * projects.length
 ---
 
 <section class="w-full bg-main-light py-20 sm:py-32 relative text-main-black">
