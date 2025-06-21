@@ -19,7 +19,7 @@ The goal of the website is initially one thing: shows my portfolio. The first th
 <br> <br>
 <div class="flex flex-col items-center gap-1">
 
-![Cadevue.com Design Guideline](../../assets/web-content/cadevuecom-guideline.png)
+![Cadevue.com Design Guideline](../../assets/web-content/cadevue-web/cadevuecom-guideline.png)
 
 <br>
 <span class="text-sm sm:text-base italic">Design Guideline for cadevue.com</span>
@@ -32,7 +32,7 @@ What I did though, is following the mobile-first design approach. I think. it's 
 <br> <br>
 <div class="flex flex-col items-center gap-1">
 
-![Cadevue.com Website Design](../../assets/web-content/cadevuecom-design.png)
+![Cadevue.com Website Design](../../assets/web-content/cadevue-web/cadevuecom-design.png)
 
 <br>
 <span class="text-sm sm:text-base italic">The Mobile Design of cadevue.com</span>
@@ -78,7 +78,7 @@ Okay, enough with the Astro-Svelte glaze, let's just see the result. With all of
 <br> <br>
 <div class="flex flex-col items-center gap-1">
 
-![Lighthouse score of Cadevue.com (Mobile)](../../assets/web-content/cadevuecom-mobileperf.png)
+![Lighthouse score of Cadevue.com (Mobile)](../../assets/web-content/cadevue-web/cadevuecom-mobileperf.png)
 
 <br>
 <span class="text-sm sm:text-base italic">Lighthouse score of cadevue.com (Mobile)</span>
@@ -86,7 +86,7 @@ Okay, enough with the Astro-Svelte glaze, let's just see the result. With all of
 <br>
 <div class="flex flex-col items-center gap-1">
 
-![Lighthouse score of Cadevue.com (Desktop)](../../assets/web-content/cadevuecom-desktopperf.png)
+![Lighthouse score of Cadevue.com (Desktop)](../../assets/web-content/cadevue-web/cadevuecom-desktopperf.png)
 
 <br>
 <span class="text-sm sm:text-base italic">Lighthouse score of cadevue.com (Desktop)</span>
