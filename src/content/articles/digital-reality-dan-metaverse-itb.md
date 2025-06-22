@@ -61,13 +61,6 @@ Input: Hand Motion <br>
 Positioning: MR <br>
 Software/Firmware: Windows Holographic <br><br>
 
-- **Theta Ricoh 2**<br>
-Alat untuk menangkap video dan foto dalam format 360 derajat.
-- **EinScan 3D**<br>
-Alat untuk menangkap objek fisik ke dalam format objek 3D virtual.
-- **Wacom One**<br>
-Alat berupa tablet grafis yang memungkinkan pengguna untuk menggambar atau menulis untuk membuat konten digital.
-
 ## Bagaimana Alat-alat ini bekerja?
 Pada dasarnya, alat-alat ini memiliki 3 komponen pembangun: Display/HMD, Sensor/Tracking, dan Input. Display atau Head-Mounted Display (HMD) adalah alat yang digunakan untuk menampilkan dunia virtual kepada pengguna. Sensor atau tracking adalah alat yang digunakan untuk melacak posisi dan gerakan pengguna dalam dunia virtual. Input adalah alat yang digunakan untuk berinteraksi dengan dunia virtual, seperti controller, hand-tracking, atau voice command.
 
