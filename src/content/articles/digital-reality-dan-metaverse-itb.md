@@ -1,8 +1,8 @@
 ---
 title: Digital Reality dan Lab Metaverse ITB
 meta_description: Digital Reality adalah konsep teknologi yang menggabungkan dunia digital/virtual dan dengan dunia untuk menciptakan pengalaman yang imersif. ITB memiliki Lab Metaverse yang berfokus pada penelitian dan pengembangan teknologi digital reality.
-date_published: 2025-06-21
-date_last_updated: 2025-06-21
+date_published: 2025-06-22
+date_last_updated: 2025-06-22
 is_published: true
 ---
 
@@ -16,6 +16,13 @@ Digital Reality mencakup berbagai teknologi yang memungkinkan interaksi antara d
 
 ![Reality-Virtuality Continuum by Paul Milgram](../../assets/web-content/metaverse-tour/continuum.png)
 <span class="text-sm sm:text-base italic">Reality-Virtuality Continuum oleh Paul Milgram</span>
+
+- Virtual Reality (VR)<br>
+Virtual Reality adalah teknologi yang menghadirkan dunia virtual sepenuhnya dan memungkinkan penggunanya berinteraksi dengan objek virtual melalui perangkat VR Headset (seperti Meta Quest, Apple Vision, dan sebagainya).
+- Augmented Reality (AR)<br>
+Augmented Reality (AR) adalah teknologi yang menambahkan lapisan objek digital ke dunia nyata, sehingga memungkinkan interaksi objek virtual melalui *smartphone* maupun tablet. Contoh implementasi dari AR adalah Pokemon Go, Google Lens, dan Apple Translator (Camera).
+- Merged Reality (MR)<br>
+Seperti pada namanya, Merged Reality (MR) merupakan gabungan dari VR dan AR. Teknologi ini memungkinkan interaksi dengan objek virtual di lingkungan nyata menggunakan perangkat khusus (seperti Microsoft HoloLens dan Snapdragon MR).
 
 Aplikasi Digital Reality sangat luas, mulai dari gim, pendidikan, pelatihan industri, aplikasi medis, bahkan militer. Di ITB, Lab Metaverse telah melakukan beberapa penelitian dan pengembangan proyek dalam bidang ini. Beberapa proyek yang telah dilakukan antara lain City Planning in VR (Pemodelan Kota), Mindverse (Pendidikan), dan Smart Tourism Garut (Pariwisata).
 
@@ -31,11 +38,29 @@ Akan tetapi, Digital Reality masih memiliki tantangan untuk diadopsi secara luas
 
 Beberapa alat yang ada di Lab Metaverse ITB antara lain:
 - **Oculus Quest dan Pro**<br>
-Headset Virtual Reality (VR) yang memungkinkan pengguna untuk merasakan pengalaman virtual reality. Memiliki fitur inside-out tracking untuk melacak posisi pengguna tanpa perlu sensor eksternal. Menggunakan interface berupa controller, hand-tracking, dan voice command. Memiliki fitur passthrough mode untuk melihat dunia nyata di sekitar pengguna.
+Headset Virtual Reality (VR) yang memungkinkan pengguna untuk merasakan pengalaman virtual reality. Memiliki fitur inside-out tracking untuk melacak posisi pengguna tanpa perlu sensor eksternal. Menggunakan interface berupa controller, hand-tracking, dan voice command. Memiliki fitur passthrough mode untuk melihat dunia nyata di sekitar pengguna.<br><br>
+Display: 2xOLED binocular (1440x1600 px)<br>
+Tracking: 6 DoF Inside-out via 4 integrated cameras <br>
+Input: Face buttons, joystick, capacitive touch pad, index trigger, middle finger trigger <br>
+Positioning: VR <br>
+Software/Firmware: Android 10 <br><br>
+
 - **KAT VR**<br>
-Alat berupa treadmill yang memungkinkan perangkat untuk melacak gerakan pengguna dalam ruang virtual. Terdapat head-mounted display (HMD) yang digunakan untuk melihat dunia virtual serta melacak gerakan kepala pengguna. Alat ini juga dapat mendeteksi orientasi pinggang pengguna dan mendeteksi lompatan. Selain itu, gerakan kaki pengguna juga dapat dideteksi, sehingga pengguna dapat berjalan, berlari, atau melompat dalam dunia virtual. Controller juga digunakan untuk berinteraksi dengan objek dalam dunia virtual, serta pelacakan gerakan tangan pengguna.
+Alat berupa treadmill yang memungkinkan perangkat untuk melacak gerakan pengguna dalam ruang virtual. Terdapat head-mounted display (HMD) yang digunakan untuk melihat dunia virtual serta melacak gerakan kepala pengguna. Alat ini juga dapat mendeteksi orientasi pinggang pengguna dan mendeteksi lompatan. Selain itu, gerakan kaki pengguna juga dapat dideteksi, sehingga pengguna dapat berjalan, berlari, atau melompat dalam dunia virtual. Controller juga digunakan untuk berinteraksi dengan objek dalam dunia virtual, serta pelacakan gerakan tangan pengguna.<br><br>
+Display: *Not specified* <br>
+Tracking: Omnidirectional Treadmill Sensor <br>
+Input: *Most VR Headsets* <br>
+Positioning: VR <br>
+Software/Firmware: Sesuai dengan *gear*/*headset* yang digunakan <br><br>
+
 - **HoloLens 2**<br>
-Smart Augmented Reality (AR) glasses yang memungkinkan pengguna untuk melihat dunia digital yang terintegrasi dengan dunia nyata. Berjalan pada sistem operasi Windows Holographic (variasi dari Windows 10). Memiliki fitur hand-tracking, eye-tracking, dan voice command.
+Smart Augmented Reality (AR) glasses yang memungkinkan pengguna untuk melihat dunia digital yang terintegrasi dengan dunia nyata. Berjalan pada sistem operasi Windows Holographic (variasi dari Windows 10). Memiliki fitur hand-tracking, eye-tracking, dan voice command.<br><br>
+Display: 2xLBS Binocular (1440x396 px) <br>
+Tracking: 6 DoF Inside-out via 4 integrated cameras <br>
+Input: Hand Motion <br>
+Positioning: MR <br>
+Software/Firmware: Windows Holographic <br><br>
+
 - **Theta Ricoh 2**<br>
 Alat untuk menangkap video dan foto dalam format 360 derajat.
 - **EinScan 3D**<br>
@@ -56,4 +81,4 @@ Alat-alat ini dilengkapi dengan banyak sensor, yang fungsinya juga sangat bermac
 Input pada alat-alat ini juga bervariasi, mulai dari controller, hand-tracking, hingga voice command.
 <br>
 
-Berikutnya, kami juga menulis artikel tentang bagaimana cara mengimplementasikan hand-tracking di Unity menggunakan Meta Quest Pro. Anda dapat membaca artikel tersebut [di sini](https://www.cadevue.com/article/unity-tutorial-hand-tracking-meta-quest-pro).
+Berikutnya, kami juga menulis artikel tentang bagaimana cara mengimplementasikan hand-tracking di Unity menggunakan Meta Quest Pro. Anda dapat membaca artikel tersebut [di sini](https://www.cadevue.com/article/unity-tutorial-vr-hand-tracking).
