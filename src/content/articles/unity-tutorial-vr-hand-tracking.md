@@ -111,12 +111,11 @@ public class AttachToXRHand : MonoBehaviour
     }
 }
 ```
+After this, you can add the `AttachToXRHand` script to a GameObject and assign the target transform and line renderer in the Inspector.
 
 An example implementation of this is to move a Robot Claw to move towards a target in front of the user's hand. This would involve implementing an IK (Inverse Kinematics) system to control the claw's movement based on the hand's position and orientation, which is beyond the scope of this tutorial. However, you can find many resources online that explain how to implement IK in Unity.
 
 ![Robot Claw Example](../../assets/web-content/unity-hand-tracking/hand-tracking-ik.png)
-
-After this, you can add the `AttachToXRHand` script to a GameObject and assign the target transform and line renderer in the Inspector.
 
 ## Conclusion
 In this tutorial, we have covered the basic setup for hand tracking in Unity. We have installed the necessary packages, configured the project settings, and implemented a simple hand tracking script. You can now use this setup to create interactive VR experiences that utilize hand tracking.
