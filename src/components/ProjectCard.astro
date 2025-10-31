@@ -2,6 +2,16 @@
     import { labelToTagValue } from "../utils";
 
     const { title, tags, img, alt, slug } = Astro.props;
+
+    var tags_displayed = 0;
+    var character_accumulator = 0;
+    for (let i = 0; i < tags.length; i++) {
+        character_accumulator += tags[i].length;
+        if (character_accumulator > 24) {
+            break;
+        }
+        tags_displayed++;
+    }
 ---
 
 <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden">
@@ -22,7 +32,7 @@
     ">
         <h2 class="line-clamp-1">{title}</h2>
         <div class="flex gap-1 pointer-events-auto flex-wrap">
-            {tags.slice(0, 3).map((tag : string) => (
+            {tags.slice(0, tags_displayed).map((tag : string) => (
                 <a href={`/projects?tag=${labelToTagValue(tag)}`}
                     class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-xs 
                     lg:text-sm no-underline hover:text-main-light"
@@ -31,7 +41,7 @@
                     { tag }
                 </a>
             )) }
-            { tags.length > 3 && (
+            { tags.length > tags_displayed && (
                 <a href={`/project/${slug}`}
                     class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-xs 
                     lg:text-sm no-underline hover:text-main-light"
