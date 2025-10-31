@@ -12,7 +12,7 @@
     }
 ---
 
-<div class="relative w-full aspect-[5/3] rounded-lg shadow-lg overflow-hidden">
+<div class="relative w-full aspect-[5/3] shadow-lg overflow-hidden">
     <a class="absolute bottom-0 w-full flex items-end no-underline" href={`/project/${slug}`}
         data-astro-prefetch
     >
@@ -22,17 +22,17 @@
                 ${img}tr=f-webp,w-768 768w,
             `}
             sizes="(max-width: 480px) 480px, 768px"
-            alt={alt} class="object-cover aspect-[5/3] w-full rounded-lg"
+            alt={alt} class="object-cover aspect-[5/3] w-full"
         />
     </a>
     <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light p-5 sm:p-6 flex flex-col justify-end 
-        bg-gradient-to-t from-neutral-900 to-transparent rounded-lg pointer-events-none gap-1.5 sm:gap-3
+        bg-gradient-to-t from-neutral-900 to-transparent pointer-events-none gap-1.5 sm:gap-3
     ">
         <h2 class="line-clamp-1">{title}</h2>
         <div class="flex gap-1 pointer-events-auto flex-wrap">
             {tags.slice(0, tags_displayed).map((tag : string) => (
                 <a href={`/projects?tag=${labelToTagValue(tag)}`}
-                    class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-xs 
+                    class="text-main-light bg-main-red px-3 py-0.5 text-xs 
                     lg:text-sm no-underline hover:text-main-light"
                     data-astro-prefetch='hover'
                 >
@@ -41,7 +41,7 @@
             )) }
             { tags.length > tags_displayed && (
                 <a href={`/project/${slug}`}
-                    class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-xs 
+                    class="text-main-light bg-main-red px-3 py-0.5 text-xs 
                     lg:text-sm no-underline hover:text-main-light"
                     data-astro-prefetch='hover'
                 >

@@ -9,10 +9,10 @@ interface Props {
 const { label: title, href='/' } = Astro.props
 ---
 
-<a class="bg-main-red px-6 py-1 rounded-full flex gap-3 items-center w-fit no-underline" href={href}
+<a class="bg-main-red px-6 py-1 flex gap-3 items-center w-fit no-underline" href={href}
     data-astro-prefetch
 >
-    <p class="text-lg text-main-light font-bold sm:text-2xl">{title}</p>
+    <p class="text-lg text-main-light font-bold sm:text-2xl font-[Monocraft]">{title}</p>
     <span class="-rotate-45">
         <ArrowIcon color="#f4f6f1" size="24px"/>
     </span>

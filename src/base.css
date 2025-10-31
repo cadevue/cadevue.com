@@ -1,21 +1,13 @@
 /* Font Import */
 @font-face {
-    font-family: "Telegraf";
-    src: url("/fonts/PPTelegraf-Regular.woff2") format("woff2"),
-        url("/fonts/PPTelegraf-Regular.woff") format("woff"),
-        url("/fonts/PPTelegraf-Regular.otf") format("opentype");
+    font-family: "Monocraft";
+    src: url("/fonts/Monocraft.otf") format("opentype");
     font-weight: normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: "Telegraf";
-    src: url("/fonts/PPTelegraf-UltraBold.woff2") format("woff2"),
-        url("/fonts/PPTelegraf-UltraBold.woff") format("woff"),
-        url("/fonts/PPTelegraf-UltraBold.otf") format("opentype");
-    font-weight: bold;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /** Base CSS */
 @tailwind base;
@@ -23,15 +15,15 @@
 @tailwind utilities;
 
 h1 {
-    @apply text-2xl sm:text-3xl font-bold;
+    @apply text-2xl sm:text-3xl font-bold font-[Monocraft];
 }
 
 h2 {
-    @apply text-xl sm:text-2xl font-bold;
+    @apply text-xl sm:text-2xl font-bold font-[Monocraft];
 }
 
 h3 {
-    @apply text-lg sm:text-xl font-bold;
+    @apply text-lg sm:text-xl font-bold font-[Monocraft];
 }
 
 p {

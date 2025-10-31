@@ -1,6 +1,4 @@
 ---
-import { labelToTagValue } from '../utils'
-
 interface Props {
     label: string
 }
@@ -8,7 +6,7 @@ interface Props {
 const { label } = Astro.props;
 ---
 
-<a href=`/projects` class="text-main-light bg-main-red rounded-full px-4 py-0.5 text-sm 
+<a href=`/projects` class="text-main-light bg-main-red px-4 py-0.5 text-sm
     sm:text-base no-underline hover:text-main-light" data-astro-prefetch="hover">
     { label }
 </a>
