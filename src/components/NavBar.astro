@@ -1,0 +1,53 @@
+<nav id="navbar">
+    <!-- Menu button for mobile -->
+    <button
+        id="menu-button"
+        class="sm:hidden text-main-light absolute top-10 right-8"
+        aria-label="Toggle menu"
+        >
+        <span id="menu-icon" class="text-2xl">☰</span>
+    </button>
+
+    <!-- Navigation links -->
+    <ul class="bg-main-black gap-6 sm:flex text-center list-none hidden" id="menu-list">
+        <li class="ml-0"> <a href="/" class="no-underline text-lg text-main-light mt-4 inline-block sm:mt-0">Home</a> </li>
+        <li class="ml-0"> <a href="/projects" class="no-underline text-lg text-main-light mt-4 inline-block sm:mt-0">Projects</a> </li>
+        <li class="ml-0"> <a href="/articles" class="no-underline text-lg text-main-light mt-4 inline-block sm:mt-0">Articles</a> </li>
+        <li class="ml-0"> <a href="/contact" class="no-underline text-lg text-main-light mt-4 inline-block sm:mt-0">Contact</a> </li>
+    </ul>
+</nav>
+
+<script>
+    const button = document.getElementById('menu-button') as HTMLButtonElement;
+    const icon = document.getElementById('menu-icon') as HTMLElement;
+    const menu = document.getElementById('menu-list') as HTMLElement;
+    const nav = document.getElementById('navbar') as HTMLElement;
+
+    let isOpen = false;
+
+    button.addEventListener('click', () => {
+        isOpen = !isOpen;
+        if (isOpen) {
+            icon.textContent = '✕';
+            menu.classList.remove('hidden');
+            if (window.innerWidth < 640) {
+                nav.classList.add('bg-main-black', 'fixed', 'top-0', 'left-0', 'bottom-0', 'right-0', 'z-50', 'flex', 'items-center', 'justify-center', 'w-full');
+            }
+        } else {
+            icon.textContent = '☰';
+            menu.classList.add('hidden');
+            nav.classList.remove('bg-main-black', 'fixed', 'top-0', 'left-0', 'bottom-0', 'right-0', 'z-50', 'flex', 'items-center', 'justify-center', 'w-full');
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 640) {
+            menu.classList.remove('hidden');
+            nav.classList.remove('bg-main-black', 'fixed', 'top-0', 'left-0', 'bottom-0', 'right-0', 'z-50', 'flex', 'items-center', 'justify-center', 'w-full');
+            icon.textContent = '☰';
+            isOpen = false;
+        } else if (!isOpen) {
+            menu.classList.add('hidden');
+        }
+    });
+</script>

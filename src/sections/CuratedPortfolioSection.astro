@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import ContentLayout from "../layouts/ContentLayout.astro";
 import ArrowIcon from "../components/ArrowIcon.astro";
-import PortfolioGrid from "../components/PortfolioGrid.svelte";
+import PortfolioGrid from "../components/PortfolioGrid.astro";
 
 const allProjects = await getCollection("projects");
 const projects = allProjects.sort((a, b) => {

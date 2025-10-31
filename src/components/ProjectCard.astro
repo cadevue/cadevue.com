@@ -1,8 +1,8 @@
-<script>
+---
     import { labelToTagValue } from "../utils";
 
-    const { title, tags, img, alt, slug } = $props();
-</script>
+    const { title, tags, img, alt, slug } = Astro.props;
+---
 
 <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden">
     <a class="absolute bottom-0 w-full flex items-end no-underline" href={`/project/${slug}`}
@@ -22,7 +22,7 @@
     ">
         <h2 class="line-clamp-1">{title}</h2>
         <div class="flex gap-1 pointer-events-auto flex-wrap">
-            {#each tags.slice(0, 3) as tag}
+            {tags.slice(0, 3).map((tag : string) => (
                 <a href={`/projects?tag=${labelToTagValue(tag)}`}
                     class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-xs 
                     lg:text-sm no-underline hover:text-main-light"
@@ -30,10 +30,8 @@
                 >
                     { tag }
                 </a>
-            {/each}
-
-            <!-- the rest, show ... -->
-            {#if tags.length > 3}
+            )) }
+            { tags.length > 3 && (
                 <a href={`/project/${slug}`}
                     class="text-main-light bg-main-red rounded-full px-3 py-0.5 text-xs 
                     lg:text-sm no-underline hover:text-main-light"
@@ -41,7 +39,7 @@
                 >
                     ...
                 </a>
-            {/if}
+            ) }
         </div>
     </div>
 </div>

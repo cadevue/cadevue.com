@@ -3,7 +3,7 @@ title: Digital Reality dan Lab Metaverse ITB
 meta_description: Digital Reality adalah konsep teknologi yang menggabungkan dunia digital/virtual dan dengan dunia untuk menciptakan pengalaman yang imersif. ITB memiliki Lab Metaverse yang berfokus pada penelitian dan pengembangan teknologi digital reality.
 date_published: 2025-06-22
 date_last_updated: 2025-06-22
-is_published: true
+is_published: false
 ---
 
 ![View dari Lab Metaverse ITB](../../assets/web-content/metaverse-tour/Metaverse_ITB.jpg)

@@ -3,7 +3,7 @@ title: "Unity Tutorial: VR Hand Tracking"
 meta_description: Hands-on tutorial on get hand tracking quickly in Unity. This tutorial will talk about installing the necessary packages, configuring the project settings, and implementing a simple hand tracking script.
 date_published: 2025-06-22
 date_last_updated: 2025-06-22
-is_published: true
+is_published: false
 ---
 
 ![Unity XR Hands](../../assets/web-content/unity-hand-tracking/unity-xr-hands.jpg)
