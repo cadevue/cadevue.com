@@ -10,10 +10,8 @@ const projects = allProjects.sort((a, b) => {
 }).filter((project) => project.data.is_shown).slice(0, 10);
 ---
 
-<section class="w-full bg-main-light py-20 sm:py-32 relative text-main-black">
+<section class="w-full bg-main-light py-10 sm:py-16 relative text-main-black">
     <ContentLayout>
-        <div class="absolute w-1/5 h-1 bg-main-red top-10 right-0"/>
-        <div class="absolute w-1/5 h-1 bg-main-red bottom-10 left-0"/>
         <div class="flex items-center gap-2">
             <h1 class="mt-1 text-3xl sm:text-4xl">Portfolio</h1>
             <span class="rotate-45">

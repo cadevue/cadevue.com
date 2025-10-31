@@ -3,18 +3,16 @@
 
     const { title, tags, img, alt, slug } = Astro.props;
 
-    var tags_displayed = 0;
-    var character_accumulator = 0;
-    for (let i = 0; i < tags.length; i++) {
-        character_accumulator += tags[i].length;
-        if (character_accumulator > 24) {
-            break;
-        }
-        tags_displayed++;
+    // Calculate how many tags can be displayed within 24 characters
+    let tags_displayed = 0;
+    let total = 0;
+    for (const tag of tags) {
+      if ((total += tag.length) > 24) break;
+      tags_displayed++;
     }
 ---
 
-<div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden">
+<div class="relative w-full aspect-[5/3] rounded-lg shadow-lg overflow-hidden">
     <a class="absolute bottom-0 w-full flex items-end no-underline" href={`/project/${slug}`}
         data-astro-prefetch
     >
@@ -24,11 +22,11 @@
                 ${img}tr=f-webp,w-768 768w,
             `}
             sizes="(max-width: 480px) 480px, 768px"
-            alt={alt} class="w-full aspect-video rounded-lg"
+            alt={alt} class="object-cover aspect-[5/3] w-full rounded-lg"
         />
     </a>
     <div class="absolute bottom-0 w-full h-1/2 z-10 text-main-light p-5 sm:p-6 flex flex-col justify-end 
-        bg-gradient-to-t from-neutral-900 to-transparent rounded-lg pointer-events-none gap-0.5 sm:gap-1
+        bg-gradient-to-t from-neutral-900 to-transparent rounded-lg pointer-events-none gap-1.5 sm:gap-3
     ">
         <h2 class="line-clamp-1">{title}</h2>
         <div class="flex gap-1 pointer-events-auto flex-wrap">
