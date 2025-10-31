@@ -13,37 +13,24 @@ import BackButton from '../components/BackButton.astro';
         </svg>
         <ContentLayout>
             <main class="flex flex-col gap-2 max-w-3xl z-10">
-                <h1 class="text-3xl sm:text-4xl" data-aos="fade-up" id="contact-start">Let's Get in Touch!</h1>
-                <p data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#contact-start">
+                <h1 class="text-3xl sm:text-4xl">Let's Get in Touch!</h1>
+                <p>
                     You could write me a message from the form below.
                 </p>
                 <form class="flex flex-col gap-3 z-10" 
                     action="https://formspree.io/f/mqaekrby" method="post" 
                 >
-                    <TextField label="Name" id="name" type="text" placeholder="John Doe" required
-                        aos={{ type: "fade-up", delay: "500", anchor: "#contact-start" }}
-                    />
-                    <TextField label="Email" id="email" type="email" placeholder="johndoe@company.org" required
-                        aos={{ type: "fade-up", delay: "600", anchor: "#contact-start" }}
-                    />
-                    <TextAreaField label="Message" id="message" rows="5" placeholder="Hi, Addin! Let's cook something together." required
-                        aos={{ type: "fade-up", delay: "700", anchor: "#contact-start" }}
-                    />
-                    <div class="mt-4" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="#contact-start">
+                    <TextField label="Name" id="name" type="text" placeholder="John Doe" required />
+                    <TextField label="Email" id="email" type="email" placeholder="johndoe@company.org" required />
+                    <TextAreaField label="Message" id="message" rows="5" placeholder="Hi, Addin! Let's cook something together." required />
+                    <div class="mt-4">
                         <Button label="send email" type="submit"/>
                     </div>
                 </form>
-            </div>
-            <div class="mt-8 flex gap-4 items-center" data-aos="fade-up" data-aos-delay="1100" data-aos-anchor="#contact-start">
+            </main>
+            <div class="mt-8 flex gap-4 items-center">
                 <BackButton text="Back" />
             </div>
         </ContentLayout>
     </main>
 </BaseLayout>
-
-<script>
-    // const form = document.querySelector('form') as HTMLFormElement;
-    // form.addEventListener('submit', (event) => {
-    //     event.preventDefault();
-    // });
-</script>

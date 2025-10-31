@@ -5,17 +5,12 @@ interface Props {
     rows: number | string
     placeholder: string
     required: boolean
-    aos?: {
-        type: string
-        delay: number | string
-        anchor: string
-    }
 }
 
-const { label, id, rows, placeholder, required, aos } = Astro.props
+const { label, id, rows, placeholder, required } = Astro.props
 ---
 
-<div class="flex flex-col gap-1 mb-3" data-aos={aos?.type} data-aos-delay={aos?.delay} data-aos-anchor={aos?.anchor}>
+<div class="flex flex-col gap-1 mb-3">
     <label for={id}>{label}</label>
     <textarea id={id} name={id} required={required} 
         class="w-full max-w-lg p-2 rounded-lg text-main-black outline outline-1 -outline-offset-1 outline-main-gray placeholder:outline-main-gray

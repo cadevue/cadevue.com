@@ -13,10 +13,7 @@ const recentArticles = allArticles.sort((a, b) =>
 
 <section class="w-full bg-main-black py-20 sm:py-32 relative text-main-light">
     <ContentLayout>
-        <!-- <div class="bg-main-darker text-gray-300 font-mono px-2 py-1 rounded-xl items-center w-fit" data-aos="fade-up" data-aos-delay="200" id="article-start">
-            <span class="text-white">I write articles too! Do check it out 👌</span>
-        </div> -->
-        <div class="flex items-center gap-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#article-start">
+        <div class="flex items-center gap-2">
             <h1 class="mt-1">Recent Articles</h1>
             <span class="rotate-45">
                 <ArrowIcon color="#ba3a2c" size="40px"/>
@@ -26,7 +23,7 @@ const recentArticles = allArticles.sort((a, b) =>
             <div class="grid grid-cols-1 gap-10 mt-10">
                 {
                     recentArticles.length === 0 && (
-                        <p data-aos="fade-up" data-aos-delay="600" data-aos-anchor="#article-start">
+                        <p>
                             No articles yet. Check back soon!
                         </p>
                     )
@@ -36,12 +33,11 @@ const recentArticles = allArticles.sort((a, b) =>
                     <ArticlePreview 
                         slug={article.slug} title={article.data.title} 
                         last_updated={article.data.date_last_updated} description={article.data.meta_description} 
-                        aos={{ type: 'fade-up', delay: `${(600 + idx * 150)}`, anchor: '#article-start' }}
                     />
                 ))}
             </div>
         </div>
-        <p class="mt-10" data-aos="fade-up" data-aos-delay="1200" data-aos-anchor="#article-start">
+        <p class="mt-10">
             <a href="/articles" class="text-main-light" data-astro-prefetch>View all articles</a>
         </p>
     </ContentLayout>

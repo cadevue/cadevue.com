@@ -15,10 +15,10 @@ const sortedArticles = allArticles.sort((a, b) =>
 <BaseLayout title="All Articles - See Addin Munawwar Posts" description="All articles that Addin Munawwar has written.">
     <main class="flex-1 bg-main-black py-16 text-main-light">
         <ContentLayout>
-            <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
                 <BackButton light={true} />
             </div>
-            <div class="flex items-center gap-2 mt-2" data-aos="fade-up" data-aos-delay="200" id='portfolio-start'>
+            <div class="flex items-center gap-2 mt-2">
                 <h1 class="mt-1 text-3xl sm:text-4xl">All Articles</h1>
                 <span class="rotate-45">
                     <ArrowIcon color="#ba3a2c" size="40px"/>
@@ -27,17 +27,16 @@ const sortedArticles = allArticles.sort((a, b) =>
             <div class="grid grid-cols-1 gap-10 mt-10">
                 {
                     sortedArticles.length === 0 && (
-                        <p data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#portfolio-start">
+                        <p>
                             No articles yet. Check back soon!
                         </p>
                     )
                 }
 
-                {sortedArticles.map((article, idx) => (
+                {sortedArticles.map((article, _) => (
                     <ArticlePreview 
                         slug={article.slug} title={article.data.title} 
                         last_updated={article.data.date_last_updated} description={article.data.meta_description} 
-                        aos={{ type: 'fade-up', delay: `${(600 + idx * 150)}`, anchor: '#article-start' }}
                     />
                 ))}
             </div>

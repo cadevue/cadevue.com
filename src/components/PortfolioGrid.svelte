@@ -1,10 +1,10 @@
 <script>
     import ProjectCard from "./ProjectCard.svelte";
-    const { projects, appearDelay, anchorElmt } = $props();
+    const { projects } = $props();
 </script>
 
 
-<div class="grid grid-cols-1 gap-6 my-6 lg:grid-cols-2" data-aos="fade-up" data-aos-anchor={anchorElmt} data-aos-delay={appearDelay}>
+<div class="grid grid-cols-1 gap-6 my-6 lg:grid-cols-2">
     {#if projects.length === 0}
         <p class="text-main-black">No projects found</p>
     {:else}

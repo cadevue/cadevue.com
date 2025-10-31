@@ -5,17 +5,12 @@ interface Props {
     type: astroHTML.JSX.HTMLInputTypeAttribute
     placeholder: string
     required: boolean
-    aos?: {
-        type: string
-        delay: number | string
-        anchor: string
-    }
 }
 
-const { label, id, type, placeholder, required, aos } = Astro.props
+const { label, id, type, placeholder, required } = Astro.props
 ---
 
-<div class="flex flex-col gap-1" data-aos={aos?.type} data-aos-delay={aos?.delay} data-aos-anchor={aos?.anchor}>
+<div class="flex flex-col gap-1">
     <label for={id}>{label}</label>
     <input type={type} id={id} name={id} required={required}
         class="w-full p-2 rounded-lg text-main-black outline outline-1 -outline-offset-1 outline-main-gray

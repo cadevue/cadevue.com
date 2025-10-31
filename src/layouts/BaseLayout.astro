@@ -1,6 +1,5 @@
 ---
 import '../base.css'
-import 'aos/dist/aos.css'
 
 import { ClientRouter } from "astro:transitions"
 import Footer from "../components/Footer.astro"
@@ -29,19 +28,6 @@ const {
 		<Header />
 		<slot />
 		<Footer />
-		<script>
-			import AOS from 'aos'
-
-			function initAOS() {
-				AOS.init({ duration: 750, once: true, });
-			}
-			initAOS();
-			
-			document.addEventListener('astro:after-swap', () => {
-				initAOS();
-			});
-
-		</script>
 	</body>
 </html>
 

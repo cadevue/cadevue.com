@@ -1,12 +1,10 @@
 <script>
     import { labelToTagValue } from "../utils";
 
-    const { title, tags, img, alt, slug, aos } = $props();
+    const { title, tags, img, alt, slug } = $props();
 </script>
 
-<div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden"
-    data-aos={aos?.type} data-aos-anchor={aos?.anchor} data-aos-delay={aos?.delay}
->
+<div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden">
     <a class="absolute bottom-0 w-full flex items-end no-underline" href={`/project/${slug}`}
         data-astro-prefetch
     >

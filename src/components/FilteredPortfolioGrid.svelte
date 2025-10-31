@@ -40,19 +40,17 @@
 
 <div class="w-full h-fit flex flex-col justify-between gap-2 lg:flex-row lg:gap-10">
     <div class="mt-4 h-fit w-full flex flex-col items-start gap-2 lg:w-48 lg:mt-6">
-        <p data-aos="fade-up" data-aos-delay="600" data-aos-anchor={anchorElmt}>Filter by Tags</p>
-        <button class="underline" data-aos="fade-up" data-aos-delay="600" data-aos-anchor={anchorElmt} onclick={toggleAllFilter}>
+        <p>Filter by Tags</p>
+        <button class="underline" onclick={toggleAllFilter}>
             {isNoneSelected ? "Select All" : "Clear All"}
         </button>
-        <div class="flex flex-wrap gap-2 mt-2 lg:mt-4 lg:w-52" data-aos="fade-up" data-aos-delay="700" data-aos-anchor={anchorElmt}>
+        <div class="flex flex-wrap gap-2 mt-2 lg:mt-4 lg:w-52">
             {#each tags as tag}
                 <Chip label={tag} />
             {/each}
         </div>
     </div>
-    <div class="h-0.5 w-full bg-main-gray mt-4 mb-2 lg:mb-0 lg:w-1 lg:h-screen"
-        data-aos="fade-up" data-aos-delay={(700 + tags.length * 100).toString()} data-aos-anchor={anchorElmt}
-    ></div>
+    <div class="h-0.5 w-full bg-main-gray mt-4 mb-2 lg:mb-0 lg:w-1 lg:h-screen"></div>
     <div class="flex-1">
         <PortfolioGrid projects={projects.filter(filterProjectsByTags)}
             appearDelay={appearDelay} anchorElmt={anchorElmt}
