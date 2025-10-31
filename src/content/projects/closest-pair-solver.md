@@ -6,7 +6,7 @@ poster: {
 }
 tags: ["CompSci", "In Browser", "Golang", "Typescript", "Algorithm", "Three.js", "Docker", "Cloudflare", "AWS EC2", "Web", "Vite", "TailwindCSS", "Websocket", "CI/CD", "Github Actions"]
 meta_description: A web based program that solve the closest pair problem using 2 kind of algorithm — Brute Force and Divide and Conquer. The frontend is built using Typescript and Three.js, while the backend is built using Golang. The program is deployed using Cloudflare Pages (frontend) and Docker-AWS EC2 (backend). Addin Munawwar (Cadevue).
-priority: 8.0
+priority: 7.9
 is_shown: true
 ---
 

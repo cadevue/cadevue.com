@@ -13,7 +13,11 @@ is_shown: true
 # Description
 Collect cats and spread feline domination in this chaotic action-stealth game! Become a cat god, build your cat army, and sow seeds of feline supremacy (and love)! Be careful of your jealous rival though, the dog, who are all too eager to catch you. 
 
-This game was the **2nd place winner** of **Student Category** in the **Gameseed 2024**, the biggest National Game Development Competition in Indonesia based on number of participants. This game is also showcased in <a href="https://www.igdx.id/" target="_blank" rel="noopener noreferrer">Indonesia Game Developer Exchange (IGDX)</a> 2024, the biggest game developer business event in Indonesia. The event was held in Bali, Indonesia.
+This game was the **2nd place winner** of **Student Category** in the 
+<a href="https://www.instagram.com/gameseed.id/" target="_blank" rel="noopener noreferrer">Gameseed 2024</a>, 
+the biggest National Game Development Competition in Indonesia based on number of participants. 
+This game is also showcased in <a href="https://www.igdx.id/" target="_blank" rel="noopener noreferrer">Indonesia Game Developer Exchange (IGDX)</a> 2024, 
+the biggest game developer business event in Indonesia. The event was held in Bali, Indonesia.
 
 <a href="https://noart278.itch.io/pawdemic" target="_blank" rel="noopener noreferrer">To Itch.io Page</a>
 <br>

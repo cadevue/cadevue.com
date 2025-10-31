@@ -6,7 +6,7 @@ poster: {
 }
 tags: ["WebGL", "Comp. Graphics", "Web", "Typescript", "HTML", "CSS", "Vite"]
 meta_description: A web-based application to draw and manipulate 2D geometry interactively. Addin Munawwar (Cadevue).
-priority: 8.8
+priority: 8.0
 is_shown: true
 ---
 

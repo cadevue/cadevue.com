@@ -6,7 +6,7 @@ poster: {
 }
 tags: ["Game Dev", "Unity", "C#", "IGDX Bootcamp"]
 meta_description: A Story-driven Card Battler Adventure game where player unveils the truth behind a winter curse while slowly overcoming each characters hardship. Addin Munawwar (Cadevue).
-priority: 8.3
+priority: 8.1
 is_shown: true
 ---
 
