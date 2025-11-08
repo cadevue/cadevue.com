@@ -9,7 +9,7 @@ import ContentLayout from '../layouts/ContentLayout.astro'
 <section class="w-full bg-main-black pt-4 pb-28 text-main-light">
     <ContentLayout>
         <div class="flex flex-col items-center gap-6 sm:gap-8 pt-8">
-            <Image src={personaImage} alt="Addin Munawwar" class="w-48 aspect-square rounded-full sm:w-64" loading="eager"/>
+            <Image src={personaImage} alt="Addin Munawwar" class="w-48 aspect-square rounded-full sm:w-64" loading="eager" fetchpriority="high"/>
             <div class="flex flex-col items-center gap-3 text-center max-w-xs sm:max-w-lg">
                 <div class="flex flex-col items-center">
                     <h1 class="font-[Monocraft]">
