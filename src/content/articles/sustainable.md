@@ -1,10 +1,10 @@
 ---
 title: Sustainable.
-meta_description: to all the dreams that seem blurry. imagined while running.
+meta_description: to all the dreams that seem blurry.
 write_date: 2025-11-13
 is_published: true
 ---
-<i> to all the dreams that seem blurry. imagined while running. </i>
+<i> to all the dreams that seem blurry.</i>
 
 ![(un)sustainable](../../assets/articles/sustainable.png)
 
