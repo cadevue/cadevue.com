@@ -8,7 +8,7 @@ import BackButton from "../components/BackButton.astro";
 
 const allArticles = await getCollection("articles");
 const sortedArticles = allArticles.sort((a, b) => 
-    a.data.date_last_updated < b.data.date_last_updated ? 1 : -1)
+    a.data.write_date < b.data.write_date ? 1 : -1)
     .filter((article) => article.data.is_published);
 ---
 
@@ -36,7 +36,7 @@ const sortedArticles = allArticles.sort((a, b) =>
                 {sortedArticles.map((article, _) => (
                     <ArticlePreview 
                         slug={article.slug} title={article.data.title} 
-                        last_updated={article.data.date_last_updated} description={article.data.meta_description} 
+                        write_date={article.data.write_date} description={article.data.meta_description} 
                     />
                 ))}
             </div>

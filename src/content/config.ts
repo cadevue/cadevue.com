@@ -22,8 +22,7 @@ const articleCollection = defineCollection({
     schema: z.object({
         title: z.string(),
         meta_description: z.string(),
-        date_published: z.date(),
-        date_last_updated: z.date(),
+        write_date: z.date(),
         is_published: z.boolean(),
     })
 });
