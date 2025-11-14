@@ -20,7 +20,7 @@ said we'd gleam so bright and steal their shine<br>
 maybe tomorrow, but it's okay<br>
 as long as we're sustainable<br>
 
-dear friend,<br>
+dear friend?<br>
 we mused about crossing the ocean<br>
 said we'd conquer the tides and catch every fish<br>
 not easy, but it's okay<br>
