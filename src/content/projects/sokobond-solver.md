@@ -6,7 +6,7 @@ poster: {
 }
 tags: ["CompSci", "Algorithm", "Web", "A-Star"]
 meta_description: A CLI-program in Java to solve the sokobond puzzle. Addin Munawwar (Cadevue).
-priority: 8.2
+priority: 10.6
 is_shown: true
 ---
 
