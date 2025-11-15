@@ -19,7 +19,7 @@ Audibook, a web application for audiobooks purchase and subscription, displaying
 1. Monolithic Base Application using PHP and MySQL.
 2. Subscription service implementation using Java and Jax-WS with (SOAP protocol).
 3. Premium Book service implementation using ExpressTS and MySQL (REST protocol).
-4. <a href="https://github.com/AJason36/Client-SPA_IF3110-2023-02-10/tree/7166b36e646736fd51092e2e33ea0900a93aa1c7" target="_blank" rel="noopener noreferrer">[Repo]</a> Single Page Application for premium book service using ReactTS and Chakra UI.
+4. Single Page Application for premium book service using ReactTS and Chakra UI.
 
 All deployment are managed using Docker and Docker Compose.
 
